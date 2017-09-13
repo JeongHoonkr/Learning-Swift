@@ -11,28 +11,20 @@ import Foundation
 
 class SubjectCalculator
 {
-    func calculation(student: Student)
-    {
-        var totalScore = sumAllSubject(subjects: student.subjects)
-    }
-    
-    func sumAllSubject(subjects: [Subject]) -> Int
-        
+    func averageCalculation(student: Student) -> Double
     {
         var totalScore: Int = 0
-        for s in subjects
+        var subjects = student.subjects
+        
+        for subjects in subjects
         {
-          totalScore += s.score
+           totalScore += subjects.score
         }
-        return totalScore
+        // 평균내기
+        
+        return Double(totalScore)/Double(subjects.count)
     }
 }
-
-
-
-
-
-
 
 
 

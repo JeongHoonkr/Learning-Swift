@@ -25,5 +25,28 @@ class Subject
         self.score = score
     }
     
+    func setScore(s: Int)
+    {
+        score = s
+        changeGrade()
+    }
+    
+    func changeGrade()
+    {
+        if score > 0 && score <= 100
+        {
+            if score >= 95 {
+                grade = "A+"
+            }
+            else if score >= 80 {
+                grade = "B"
+            }
+            else if score >= 70 {
+                grade = "C"
+            }
+            else {
+                grade = "재시험"
+            }
+        }
+    }
 }
-

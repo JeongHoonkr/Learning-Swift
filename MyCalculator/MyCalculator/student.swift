@@ -14,6 +14,7 @@ class Student
 {
     var name: String
     var studentID: Int
+    var average: Double = 0.0
     var subjects: [Subject] = []
     var totalGrade: String = "F"
     var totalScore: Int = 0
@@ -25,7 +26,7 @@ class Student
         studentID = id
     }
     
-    func setSubjects(subjects: [Subject])
+    func setSubjects(subjects: [Subject])     
     {
         self.subjects = subjects
     }
@@ -34,5 +35,4 @@ class Student
     {
         self.subjects.append(subject)
     }
-    
 }
