@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    var preToresultValue: Double = 0.0
-    var linkedValue: Double = 0.0
-    var op: String = ""
-    var isTyping: Bool = true
+    var preToresultValue: Double = 0.0   // 처음 입력하는 숫자 및 연산 이후 결과 출력 변수
+    var linkedValue: Double = 0.0  // 중간 입력 숫자
+    var op: String = ""  // 연산자 입력
+    var isTyping: Bool = true  //
     
     @IBAction func numberkeyclick(btn: UIButton)
     {
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
             
         }
     }
+    ////
     
     @IBAction func resetButton(btn: UIButton)
     {
