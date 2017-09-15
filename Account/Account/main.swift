@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+
+
+
+let account1: Account = Account(bankName: "우리은행", amount: 3000)
+let account2: Account = Account(bankName: "카카오뱅크", amount: 4000)
+
