@@ -45,13 +45,14 @@ class ViewController: UIViewController {
             self.basketMoney.text = "\(estimatedBuying - estimatedBuying)"
             self.currentBalance.text = String(balance)
             self.greetingMsg.text = "또 올거죠? (애원)"
+            estimatedBuying = 0
+            self.basketMoney.text = String(estimatedBuying)
             
         } else if balance < estimatedBuying && estimatedBuying != 0 {
             self.greetingMsg.text = "돈 가져오세요 (빠직)"}
           else if estimatedBuying == 0 {
             self.greetingMsg.text = "아직 안고르셨음 (민망)"
         }
-        estimatedBuying = 0
         
     }
     
