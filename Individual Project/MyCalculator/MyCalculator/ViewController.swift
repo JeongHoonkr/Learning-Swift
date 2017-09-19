@@ -53,9 +53,9 @@ class ViewController: UIViewController {
             displayLabel.text = "0"    // 출력화면에 "0"을 출력
             op = ""
             preToresultValue = 0.0
-            
         }
     }
+    
 //연산버튼 저장부
     @IBAction func operate(_ sender: UIButton) {
         op = sender.titleLabel!.text!
@@ -66,11 +66,12 @@ class ViewController: UIViewController {
     
 // 연산결과 출력부   ( = 버튼 )
     @IBAction func total(_ sender: UIButton)  {
+        
         if op == "+" {
             preToresultValue += linkedValue
             displayLabel.text! = String(preToresultValue)
         }
-        else if op == "-" {                                // 이하 위 세주석과 동일한 주석
+        else if op == "-" {
             preToresultValue -= linkedValue
               displayLabel.text! = String(preToresultValue)
         }
@@ -80,7 +81,7 @@ class ViewController: UIViewController {
         }
         else if op == "/" {
             preToresultValue /= linkedValue
-            displayLabel.text! = String(preToresultValue)  // 동일 주석 끝
+            displayLabel.text! = String(preToresultValue)
         }
     }
 }
