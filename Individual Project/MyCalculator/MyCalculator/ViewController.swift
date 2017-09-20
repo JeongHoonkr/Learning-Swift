@@ -21,13 +21,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-// 변수 선언부
+    // 변수 선언부
     var preToresultValue: Double = 0.0   // 처음 입력하는 숫자 및 연산 이후 결과 출력 변수
     var linkedValue: Double = 0.0  // 중간 입력 숫자
     var op: String = ""  // 연산자 입력
     var isTyping: Bool = true  // 숫자에 숫자 입력시 더 입력이 가능한지에 대한 불값
- 
-// 숫자버튼 액션부
+    
+    // 숫자버튼 액션부
     @IBAction func numberkeyclick(btn: UIButton)
     {
         
@@ -36,17 +36,19 @@ class ViewController: UIViewController {
             if displayLabel.text == "0" {     // 현재 표시된 숫자가 0일경우
                 displayLabel.text = ""   //빈 값을 출력
                 displayLabel.text! = btn.titleLabel!.text!  // 버튼 터치한 숫자를 출력
+
             }
             else {
                 displayLabel.text! += btn.titleLabel!.text! // 현재 표시된 숫자가 0이 아닐 경우 기존 숫자에 스트링처럼 이어줌 "1" + "2" = "3"
-                linkedValue = Double(displayLabel.text!)!     // 새로 입력한 숫자를 연결 변수에 저장
+                linkedValue = Double(displayLabel.text!)!     // linkedValue 초기저장된 숫자에 더해진 숫자를 저장
             }
         } else {     // 기존 숫자에 추가할 수 없을 경우
             displayLabel.text = btn.titleLabel!.text!  // 새로 입력한 숫자를 출력
+            linkedValue = Double(displayLabel.text!)!  // 연결연산자를 linkedValue에 저장
             isTyping = true
         }
     }
-// 출력화면 초기화부 ("0"으로)
+    // 출력화면 초기화부 ("0"으로)
     @IBAction func resetButton(btn: UIButton)
     {
         if btn.titleLabel?.text! == "AC" {   // 터치하는 버튼이 "AC"일 경우
@@ -56,32 +58,30 @@ class ViewController: UIViewController {
         }
     }
     
-//연산버튼 저장부
+    //연산버튼 저장부
     @IBAction func operate(_ sender: UIButton) {
         op = sender.titleLabel!.text!
         preToresultValue = Double(displayLabel.text!)!
         isTyping = false
     }
     
-    
-// 연산결과 출력부   ( = 버튼 )
+    // 연산결과 출력부   ( = 버튼 )
     @IBAction func total(_ sender: UIButton)  {
-        
-        if op == "+" {
+       switch op {
+       case "+" :
             preToresultValue += linkedValue
             displayLabel.text! = String(preToresultValue)
-        }
-        else if op == "-" {
-            preToresultValue -= linkedValue
-              displayLabel.text! = String(preToresultValue)
-        }
-        else if op == "x" {
+       case "-" :
+            preToresultValue += linkedValue
+            displayLabel.text! = String(preToresultValue)
+       case "x" :
             preToresultValue *= linkedValue
             displayLabel.text! = String(preToresultValue)
-        }
-        else if op == "/" {
+       case "/" :
             preToresultValue /= linkedValue
             displayLabel.text! = String(preToresultValue)
+        default:
+            break
         }
     }
 }

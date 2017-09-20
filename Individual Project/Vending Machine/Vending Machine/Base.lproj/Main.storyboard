@@ -200,7 +200,7 @@
                                 <rect key="frame" x="7" y="611" width="175" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="resetWithBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kML-Jy-ZWf"/>
+                                    <action selector="resetWithBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrX-Nm-K9W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-Ul-Lzv" userLabel="Purchase">
