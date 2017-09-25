@@ -12,7 +12,7 @@
 		C3F5DE071F73D45A003C3929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F5DE051F73D45A003C3929 /* Main.storyboard */; };
 		C3F5DE091F73D45A003C3929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F5DE081F73D45A003C3929 /* Assets.xcassets */; };
 		C3F5DE0C1F73D45A003C3929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F5DE0A1F73D45A003C3929 /* LaunchScreen.storyboard */; };
-		C3F5DE2A1F74A163003C3929 /* Class wt Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5DE291F74A163003C3929 /* Class wt Function.swift */; };
+		C3F5DE2A1F74A163003C3929 /* Breakthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5DE291F74A163003C3929 /* Breakthrough.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		C3F5DE081F73D45A003C3929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F5DE0B1F73D45A003C3929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F5DE0D1F73D45A003C3929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3F5DE291F74A163003C3929 /* Class wt Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Class wt Function.swift"; sourceTree = "<group>"; };
+		C3F5DE291F74A163003C3929 /* Breakthrough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breakthrough.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				C3F5DE011F73D45A003C3929 /* AppDelegate.swift */,
 				C3F5DE031F73D45A003C3929 /* ViewController.swift */,
 				C3F5DE051F73D45A003C3929 /* Main.storyboard */,
-				C3F5DE291F74A163003C3929 /* Class wt Function.swift */,
+				C3F5DE291F74A163003C3929 /* Breakthrough.swift */,
 				C3F5DE081F73D45A003C3929 /* Assets.xcassets */,
 				C3F5DE0A1F73D45A003C3929 /* LaunchScreen.storyboard */,
 				C3F5DE0D1F73D45A003C3929 /* Info.plist */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F5DE2A1F74A163003C3929 /* Class wt Function.swift in Sources */,
+				C3F5DE2A1F74A163003C3929 /* Breakthrough.swift in Sources */,
 				C3F5DE041F73D45A003C3929 /* ViewController.swift in Sources */,
 				C3F5DE021F73D45A003C3929 /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +303,7 @@
 				C3F5DE121F73D45A003C3929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
