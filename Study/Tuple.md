@@ -64,6 +64,27 @@
   }
   ```
 
-  ​
+
+
+​       <응용>  Tuple과 Switch문 사용
+
+* ```
+  for (roomName, capacities) in roomCapacity {
+      let roomDescription: String
+      switch roomName {
+      case "Basky" :
+          roomDescription = "\(roomName)은 스터디룸이며, 정원은 \(capacities)명입니다."
+      case "Rivera", "kanlo" :
+          roomDescription = "\(roomName)은 티 세미나룸이며, 정원은 \(capacities)명입니다."
+      case "kanlo" :
+          roomDescription = "\(roomName)은 그룹 세미나룸이며, 정원은 \(capacities)명입니다."
+      case let caseCapacity where capacities > 30 :
+          roomDescription = "\(roomName)의 정원은 \(capacities)명이며 별도의 사용신청이 필요합니다."
+      default:
+          roomDescription = "\(roomName)의 정보를 다시 확인해 주십시요."
+      }
+  }
+  ```
 
   ​
+
