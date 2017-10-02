@@ -40,6 +40,11 @@
 * for switch if/else사용
 
   ```swift
+  var numberArray: [Int] = []
+  for i in 1...100 {
+      numberArray.append(i)
+  }
+
   for number in numberArray {
       switch number {
       case 1...100 :
