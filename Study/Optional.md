@@ -265,15 +265,13 @@ print(announcement)
 
 ![현재 announcement의 타입](http://postfiles4.naver.net/MjAxNzEwMDNfMjMx/MDAxNTA3MDI0ODc3OTQ3.ZMp-k-NpxJT6oWa_R2Fw5XyL739I-D4bu5px9vvEFpgg.yTNc9jP4vp6RrZ3DqljF19X7i5HkjifYHvwVW811G7Mg.PNG.bb_9900/스크린샷_2017-10-03_오후_6.59.52.png?type=w2)
 
-> 따라서 위의 예시에서는 아무 문제가 없지만 저 변수로 다른 작업을 하고자 할때는 
+> 따라서 위의 예시에서는 아무 문제가 없지만 저 변수로 다른 작업을 하고자 할때는? 
 >
 > 옵셔널 바인딩 작업을 해줘야 한다.
 >
 > 하지만 우리는 announcement 변수에 확실히 값이 들어갈것이라는 것을 알고 있다.
 >
 > 바로 이때 ```implicitly unwrapped```를 사용하는 것이다.
-
-
 
 ```swift
 /// 수정된 부분
@@ -282,4 +280,21 @@ print(announcement)
 ```
 
 
+
+> 하지만 ```implicitly unwrapped```를 사용하지 않고 옵셔널 바인딩도하지 않고 사용할 수 있는  다른 방법이 있다.
+>
+> 옵셔널체이닝처럼 ?를 붙히는 것이다. 
+>
+> 이를 modifying in place 즉 준비된 상태로 수정하기 라고 한다. 준비된 상태라는 것은 변수나 상수를 만들지 않고
+>
+> 수정할 수 있다는 말이다.
+>
+> **이렇게 하게 되면 옵셔널 체이닝 성격도 갖기 떄문에 값이 있을때는 업데이트하고, 값이없을때는 동작하지 않는다. ** 
+
+```swift
+// 추가 수정된 부분 (선택적)
+// 위에 방법이 나은것 같기도 하다 흠...
+announcement?.append(" Please run away")
+print(announcement)
+```
 
