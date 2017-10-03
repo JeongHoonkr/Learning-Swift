@@ -68,7 +68,7 @@
 
 ​       <응용>  Tuple과 Switch문 사용
 
-* ```
+* ```swift
   for (roomName, capacities) in roomCapacity {
       let roomDescription: String
       switch roomName {

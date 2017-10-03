@@ -1,0 +1,285 @@
+## Optional (옵셔널)
+
+#### 1. 정의
+
+> 어떤 인스턴스에 값이 없을 수도 있다는 일종의 안내, 따라서 ```optional``` '**?**'이 적용된 인스턴스는
+>
+> 다음 두가지중 하나로 해석될 수 있다.
+>
+> 1. 인스턴스에 값이 지정되어 있고, 언제든 사용될 수 있다.
+> 2. 인스턴스에 지정된 값이 없다. -> 이를 ```nil```이라 한다.
+>
+> 따라서 Optional이 적용되지 않은 인스턴스는 nil이 될 수 없다.
+
+``` swift
+var myAge: Int
+myAge = nil
+// 아래처럼 에러가 난다. 그 이유는 myAge의 타입이 인트로 지정되었기 때문이다.
+// nil을 넣어주려면 
+// var myAge: Int?로 즉 옵셔널 변수로 선언해야 한다.
+```
+
+![d](http://cfile21.uf.tistory.com/image/2604583858888A0C29F9C0)
+
+> swift에서는 변수를 선언할때 기본적으로 ```non-optional```인 값을 주어야 한다.
+>
+> 즉 어떠한 값을 변수에게 주어야 한다는 말이다.
+>
+> 그래서 Int형으로 선언했다면 반드시 정수형타입의 값이 들어가야 한다.
+>
+> 그런데 위와 같이 ```nil```이 들어간다면 ```Int```라는 메모리공간이 초기화 될 수 없는것이다.
+
+
+
+#### 2. 옵셔널에 대한 이해
+
+#####   2-1. 옵셔널 타입에 String타입의 값 넣기
+
+> 옵셔널 타입의 변수를 선언 후 "404"라는 String타입의 값을 대입해서 
+>
+> 아래와 같은 조건문에 넣었을 경우 해당 errorCodeString은 여전히 옵셔널타입의 값이기 때문에
+>
+> 원하는 String타입의 값이 나오지 않는다.
+
+![담기](http://postfiles2.naver.net/MjAxNzEwMDNfMjU1/MDAxNTA3MDAxMTEwNjA2.fi-TWnY4offuqX_Ccd2o3ZOzGX5ewRcZ2uys5P637BQg.8er0szXz04kW3c_CJu05P2SolVSVLztICamQSrL8PfAg.PNG.bb_9900/스크린샷_2017-10-03_오후_12.23.49.png?type=w2)
+
+
+
+#####   2-2. Optional Binding (옵셔널 바인딩) = nil인지 값이 있는지 체크해주는 의미
+
+#####      2-2-1. **forced unwrapping**
+
+> 이 경우 강제로 값을 가져올 수 있는데 이를 forced unwrapping(강제언래핑)이라고 한다.
+>
+> "404"라는 String타입의 값을 errorCodeString에 넣어주고 "404"라는 타입의 갑만 강제로 빼오고
+>
+> nil이라는 값은 버리는 것이다.
+
+```swift
+if errorCodeString != nil 
+{ let theError = errorCodeString!        
+print (theError)}/// 출력결과 : 404
+```
+
+>그러나 위와 같은 경우는 우리가 "404"라는 String타입의 값을 넣어준 것이 분명하지만, 만약 값이 없는 즉 nil일 수있는 상황이라면 런타임 오류로 앱은 강제종료되고 말것이다. 따라서 '!'강제 언래핑은 사용시 주의해야 하며,
+>
+>사용자체도 자제해야 한다.
+
+
+
+#####      2-2-1-1. '!' 강제언래핑 사용의 위험성 예시 : nil로 초기화한 옵셔널 변수를 강제언래핑하기
+
+<nil일지 아닐지 확실하지 않은 상황에서 사용시 아래와 같은 일이 발생될 수 있다.>
+
+```swift
+let myWeight: Double? = nil
+let somoneWeight = myWeight!
+
+// 실행결과 : fatal error: unexpectedly found nil while unwrapping an Optional value
+```
+
+
+
+#####      2-2-2. if let( or var)
+
+>  옵셔널에 값이 있다면(즉 if조건이 참일때) 임시 상수나 변수에 그 값을 지정하고 코드블럭을 사용하는 것
+>
+> 조건문에서 임시값을 변경해야 한다면 if var를 사용하여 변수로 선언한다.
+
+```swift
+var errorCodeString: String?
+errorCodeString = "404"
+
+if errorCodeString != nil {
+    if let theError = errorCodeString {
+        print (theError)}
+    else {
+        errorCodeString = nil
+    }
+}
+// 출력결과 : 404
+```
+
+
+
+> 또한 if let(or var)는 아래처럼 중첩하여 사용할 수 있다.
+
+```swift
+var myFavoriteStringNum: String?
+myFavoriteStringNum = "12345"
+
+if let myphoneNum = myFavoriteStringNum {
+    if let myphoneNumInt = Int(myphoneNum) {
+        print (myphoneNumInt)
+    }
+}
+// 출력결과 : 12345
+```
+
+> 중첩된 if let은 아래와 같이 쉼표 ','로 구분해줄수도 있다. 이 경우 콤마는 '&&'의 의미를 갖는다.
+
+```swift
+var myFavoriteStringNum: String?
+myFavoriteStringNum = "12345"
+
+if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
+	{ print (myphoneNumInt) }
+```
+
+   /그러나 위 두가지 경우처럼 중첩하여 사용할때 하나의 조건을 충족하지 못할 경우 body는 실행되지 않는다.
+
+
+
+>추가판단 삽입하기
+
+```swift
+var myFavoriteStringNum: String?
+myFavoriteStringNum = "12345"
+
+if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
+// 'myphoneNum!it == 12345' 라는 부분의 추가판단을 삽입하였다.
+, myphoneNumInt == 12345
+    { print (myphoneNumInt) }
+```
+
+
+
+#####      2-2-3. 암시적으로 언래핑된 옵셔널 (Implicitly unwrapped optional)
+
+> 암시적으로 언래핑된 옵셔널은 강제언래핑과 헷갈릴 수 있는데, 암시적 언래핑은 타입에 '!'를 붙여서 타입으로써
+>
+> 사용하며, 강제언래핑은 값에 '!'를 붙여서 사용한다.
+>
+> 암시적 언래핑을 사용하는 이유는 옵셔널타입보다는 더 명확하게 값을 항상 가질 수 있을때 사용한다.
+>
+> 즉 굳이 옵셔널로 선언해서 값을 사용할때마다 언래핑할 수고를 덜어주는 것이다.
+>
+> 하지만 nil일 가능성을 완전히 베재할 수 업
+
+
+
+> 아래는 암시적 언래핑을 사용해본 예이며 아래와 같은 사실을 알 수 있다.
+>
+> 1. 타입끝에 `!`이 붙어도  ```optional``` 타입이다.
+> 2. 즉 늘 ```nil```이 아닌 값을 갖는다는 가정을 내포하고 있다.
+> 3. 하지만 nil 값을 가질 수 없는 것은 아니다. ```optional```이기 때문에 ```nil```도 될 수 있다.
+> 4. 장점 : 값이 필요한 시점에 `!`을 쓰지 않아도 자동으로 언래핑된다. (if let, gurad let 무필요)
+> 5. 단, 콘솔로그에 Optional()이 찍히게 하지 않고 싶다면 값에 '!'를 붙여야 한다.
+> 6. 이 때  `?`를 썼을 때와 마찬가지로 nil이라면?  런타임 에러가 발생한다.
+> 7. **따라서 nil 검사는 항상 해줘야 한다.**
+
+
+
+```swift
+// 0. 암시적 언래핑 공부
+// 0-1. 배열에 넣어보고 값으로 사용하기
+var publishingCompany : String = "출판한다책"
+var writer : String! = "쓴다책"
+var bookTitle : String! = nil
+bookTitle = "정복한다 스위프트"
+
+var book: [String] = [publishingCompany, writer, bookTitle]
+
+func makingBook () -> String {
+    let theBook = ("\(book[0])에서 출판하고 \(book[1]) 작가님이 집필하신 \(book[2]) 11월 출판예정")
+    return theBook
+}
+print(makingBook())
+
+// 0-2. 값으로 사용할때 강제언래핑하기와 안하기
+var country : String = "South Korea"
+var province : String! = nil
+var street : String! = "kangseok"
+province = "Kyung ki do"
+
+print("\(country), \(province), \(street!)")
+```
+
+> 아래는 암시적 언래핑된 값이 nil일때 강제언래핑해서 값 그자체로 사용하고자 할때 에러 예시이다.
+
+![nil값 접근하기](http://postfiles15.naver.net/MjAxNzEwMDNfMTMy/MDAxNTA3MDE4MzMxMTQ3.BM-RMZSoq8UfKtwWi1dzn-bdJqOUK3u5EYsUtguwhE8g.ZrX4GsSQgZ-FNntT1hL6rzQJLPu5DIPAxUOxAFNHE0sg.PNG.bb_9900/스크린샷_2017-10-03_오후_5.11.07.png?type=w2)
+
+
+
+#####   2-3. optional chaining (옵셔널 체이닝)
+
+> 어떤 하위 포로퍼티(옵셔널의 값)에 연속적으로(사슬처럼) 조회할 수 있는것을 의미한다. 
+>
+> 즉 체인에서 어떤 옵셔널에 값이 있다면 값을, 옵셔널이 nil이라면 nil자체를 리턴한다.
+
+```swift
+// 옵셔널 체이닝(+ 옵셔널 바인딩) 활용 사례
+
+// skill 프로퍼티를 갖는 Skill 클래스 생성
+class Skill
+{var usefulSkill: [String] = ["박치기", "구르기"]}
+
+class Pocketmon
+{var skill: Skill?}
+
+var pickachu: Pocketmon = Pocketmon()
+
+// 옵셔널 체이닝 사용 = pickachu,skill? 부분
+// 피카츄의 스킬이 nil이 아니라면 스킬을 바인딩 변수에 담아 if문을 실행
+// 피카츄의 스킬이 nil이라면 else 구문 출력
+if let pocketmonSkill = pickachu.skill?.usefulSkill {
+    print ("pickachu has \(pocketmonSkill)")
+} else {
+    print ("pickachu has no skill")
+}
+
+// 여기선 nil이기 떄문에 else구문 출력
+// if구문 출력하고 싶다면 pickachu.skill = Skill(), "pickachu has ["박치기", "구르기"]"
+```
+
+
+
+##### 3. 종합적 사용 
+
+> 옵셔널 변수 및 암시적 언래핑 변수 선언
+>
+> 옵셔널 바인딩 중첩 사용
+>
+> 옵셔널 체이닝 사용
+
+
+
+```swift
+
+var rocketDamage: String?
+var totalDamage: String!
+var baseDamage: Int = 150
+rocketDamage = "300"
+
+
+if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
+{
+    totalDamage = "our planet was damaged by \(theDamage + baseDamage)"
+}
+/// 아래에서 수정할 부분 
+var announcement: String = totalDamage?.uppercased()
+print(announcement)
+```
+
+> 위의 announcement의 타입은 아래와 같은 String? 이다.
+
+![현재 announcement의 타입](http://postfiles4.naver.net/MjAxNzEwMDNfMjMx/MDAxNTA3MDI0ODc3OTQ3.ZMp-k-NpxJT6oWa_R2Fw5XyL739I-D4bu5px9vvEFpgg.yTNc9jP4vp6RrZ3DqljF19X7i5HkjifYHvwVW811G7Mg.PNG.bb_9900/스크린샷_2017-10-03_오후_6.59.52.png?type=w2)
+
+> 따라서 위의 예시에서는 아무 문제가 없지만 저 변수로 다른 작업을 하고자 할때는 
+>
+> 옵셔널 바인딩 작업을 해줘야 한다.
+>
+> 하지만 우리는 announcement 변수에 확실히 값이 들어갈것이라는 것을 알고 있다.
+>
+> 바로 이때 ```implicitly unwrapped```를 사용하는 것이다.
+
+
+
+```swift
+/// 수정된 부분
+var announcement: String! = totalDamage?.uppercased()
+print(announcement)
+```
+
+
+
