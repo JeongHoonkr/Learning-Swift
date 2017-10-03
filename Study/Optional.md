@@ -245,12 +245,10 @@ if let pocketmonSkill = pickachu.skill?.usefulSkill {
 
 
 ```swift
-
 var rocketDamage: String?
 var totalDamage: String!
 var baseDamage: Int = 150
 rocketDamage = "300"
-
 
 if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
 {
@@ -296,5 +294,60 @@ print(announcement)
 // 위에 방법이 나은것 같기도 하다 흠...
 announcement?.append(" Please run away")
 print(announcement)
+```
+
+
+
+##### 3-1 추가학습 :  ```nil ```  결합 연산자
+
+> ```var: announcement``` 의 값을 출력할때 값 그자체를 쓰면서
+>
+> nil일때도 어떤 행동을 하고자 한다면
+>
+> 옵셔널 바인딩을 통해 파싱해야 할때가 있을것이다.
+
+```swift
+var rocketDamage: String?
+var totalDamage: String!
+var baseDamage: Int = 150
+rocketDamage = "300"
+
+if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
+{
+    totalDamage = "our planet was damaged by \(theDamage + baseDamage)."
+}
+/// 바인딩을 위해 추가되는 코드
+var gotDamage: String
+if let totalDamage = totalDamage {
+    gotDamage = totalDamage
+} else {
+    gotDamage = "No damage"
+}
+print(gotDamage)
+```
+
+> 이렇게 하면 단순한 연산임에도 코드가 길어진다. 이 경우!
+>
+> ```nil coalescing operator```를 사용하면 간단히 해결할 수 있다.
+
+
+
+위 코드는 아래와 같이 수정할 수 있다.
+
+코드가 다이어트된 부분을 확인할 수 있다.
+
+```swift
+var rocketDamage: String?
+var totalDamage: String!
+var baseDamage: Int = 150
+rocketDamage = "300"
+
+if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
+{
+    totalDamage = "our planet was damaged by \(theDamage + baseDamage)."
+}
+// nil coalescing operator로 수정된 부분 
+var gotDamage = totalDamage ?? "No Damage"
+print (gotDamage)
 ```
 
