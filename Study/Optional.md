@@ -348,15 +348,17 @@ rocketDamage = "300"
 if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
 {
     totalDamage = "our planet was damaged by \(theDamage + baseDamage)."
+    totalDamage.append(" please run away.")
 }
-/// 바인딩을 위해 추가되는 코드
+/// nil일때의 행동추가를 위해 추가되는 코드
+totalDamage = nil
 var gotDamage: String
 if let totalDamage = totalDamage {
     gotDamage = totalDamage
 } else {
     gotDamage = "No damage"
 }
-print(gotDamage)
+print(gotDamage.uppercased())
 ```
 
 > 이렇게 하면 단순한 연산임에도 코드가 길어진다. 이 경우!
@@ -371,16 +373,21 @@ print(gotDamage)
 
 ```swift
 var rocketDamage: String?
-var totalDamage: String!
+var totalDamage: String?
 var baseDamage: Int = 150
 rocketDamage = "300"
 
-if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
+if let damage = rocketDamage, var totalDamage = totalDamage, let theDamage = Int(damage), theDamage == 300
 {
     totalDamage = "our planet was damaged by \(theDamage + baseDamage)."
+    totalDamage.append(" please run away.")
 }
-// nil coalescing operator로 수정된 부분 
-var gotDamage = totalDamage ?? "No Damage"
+// nil coalescing operator로 수정된 부분
+totalDamage = nil
+
+// 복습시 생각할거리1 : 아래에서 gotDamage는 왜 타입추론으로 String값을 갖는걸까
+// 복습시 생각할거리2 : 위의 totalDamage가 암시적언래핑 타입이라면 원하는결과를 얻기 위해 어떻게 해야할까
+var gotDamage = totalDamage?.uppercased() ?? "No Damage"
 print (gotDamage)
 ```
 
