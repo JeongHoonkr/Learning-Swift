@@ -180,7 +180,7 @@ print(movieListISaw)
 
 
 
-#### 7. 딕셔너리 활용 예시
+
 
      ```swift
 var roomCapacity: [String: Int] = ["Basky": 4, "Kanlo" : 5, "Picasso": 10, "Cezenne": 22,"Matisse": 30, "Rivera": 40]
