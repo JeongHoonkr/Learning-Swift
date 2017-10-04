@@ -180,9 +180,9 @@ print(movieListISaw)
 
 
 
+#### 7. 딕셔너리 활용 예시
 
-
-     ```swift
+```swift
 var roomCapacity: [String: Int] = ["Basky": 4, "Kanlo" : 5, "Picasso": 10, "Cezenne": 22,"Matisse": 30, "Rivera": 40]
 
 // dictionary의 key와 value 모두 switch에서 대조값으로 적용 가능하다
@@ -201,7 +201,7 @@ func identifyingRoom () -> [String] {
         case "Matisse" :
             roomDescription = "\(roomName)은 그룹 세미나룸이며, 정원은 \(capacities)명입니다."
         case _ where capacities > 30 :
-            roomDescription = "\(roomName)의 정원은 \(capacities)명이며 별도의 사용신청이 필요합니다."
+           roomDescription = "\(roomName)의 정원은 \(capacities)명이며 별도의 사용신청이 필요합니다."
         default:
             roomDescription = "\(roomName)의 정보를 다시 확인해 주십시요."
         }
@@ -211,6 +211,5 @@ func identifyingRoom () -> [String] {
 }
 
 identifyingRoom()
-
-     ```
+```
 
