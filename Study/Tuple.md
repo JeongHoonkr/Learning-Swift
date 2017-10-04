@@ -15,7 +15,7 @@
 
 * 기본문법
 
-  ```swift
+  ``` swift
   // 1. 튜플 만들기, 타입만 지정해줘도 되고 함수처럼 값의 이름을 지어줄 수도 있다.
   // 1-1. 다양한 타입을 섞어 사용할 수 있다.
   let myInfo: (name: String, favoriteNum: Int, weight: Double) = ("최정훈", 7, 53.5)
@@ -30,20 +30,27 @@
 
   // 3. 두개의 튜플을 하나의 튜플에 묶기
   // 3-1. 하나의 튜플을 두개의 튜플에 나눠넣기
-  // 3-2. manInfo has myInfo, womanInfo has someoneInfo
+  // 즉 manInfo has myInfo, womanInfo has someoneInfo
   let twoPersonInfo = (myInfo, someoneInfo)
   let (manInfo, womanInfo) = twoPersonInfo
 
   // 4. 각각의 값에 접근하기
-  let myinfoName = manInfo.name
+  let myInfoName = manInfo.name
   someoneInfo.weight
+
+  // 5. 배열을 튜플에 넣기
+  var myBucketList: [String] = ["스위스여행또가기", "개발자로 10년경력 쌓기"]
+  var myFavoriteNum: [Int] = [7,15,23,4]
+  let aboutMe = (myBucketList, myFavoriteNum)
+  aboutMe
+
   ```
 
 
 
 * 응용: 튜플과 스위치
 
-  **<_ 와일드카드 사용>**  : '_' 언더바를 사용하는 것으로 해당 부분에 어떤값이 와도 상관없다는 말, 함수 등 여러 곳에서 사용
+  **<_ 와일드카드 사용>**  : '_'  언더바 해당 부분에 어떤값이 와도 상관없다는 말, 함수 등 여러 곳에서 사용
 
    본 스위치문의 케이스에서는 와일드카드를 제외한 나머지 코드만 대조하겠다는 용도로 사용
 
@@ -66,25 +73,41 @@
 
 
 
-​       <응용>  Tuple과 Switch문 사용
+* <응용>  Dictionary 및 Tuple과 Switch문 사용
 
-* ```swift
-  for (roomName, capacities) in roomCapacity {
-      let roomDescription: String
-      switch roomName {
-      case "Basky" :
-          roomDescription = "\(roomName)은 스터디룸이며, 정원은 \(capacities)명입니다."
-      case "Rivera", "kanlo" :
-          roomDescription = "\(roomName)은 티 세미나룸이며, 정원은 \(capacities)명입니다."
-      case "kanlo" :
-          roomDescription = "\(roomName)은 그룹 세미나룸이며, 정원은 \(capacities)명입니다."
-      case let caseCapacity where capacities > 30 :
-          roomDescription = "\(roomName)의 정원은 \(capacities)명이며 별도의 사용신청이 필요합니다."
-      default:
-          roomDescription = "\(roomName)의 정보를 다시 확인해 주십시요."
+  ```swift
+  var roomCapacity: [String: Int] = ["Basky": 4, "Kanlo" : 5, "Picasso": 10, "Cezenne": 22,"Matisse": 30, "Rivera": 40]
+
+  // dictionary의 key와 value 모두 switch에서 대조값으로 적용 가능하다
+  // switch의 case에는 value만 와야 한다고 되어 있는데 딕셔너리의 key가 value로 인식되나보다
+  // key와 value는 쌍으로 이루어져야 하는건 동일하다
+
+  func identifyingRoom () -> [String] {
+      var roomDescription: String = ""
+      var result: [String] = []
+      for (roomName, capacities) in roomCapacity {
+          switch roomName {
+          case "Basky", "Kanlo" :
+              roomDescription = "\(roomName)은 스터디룸이며, 정원은 \(capacities)명입니다."
+          case "Picasso", "Cezenne" :
+              roomDescription = "\(roomName)은 티 세미나룸이며, 정원은 \(capacities)명입니다."
+          case "Matisse" :
+              roomDescription = "\(roomName)은 그룹 세미나룸이며, 정원은 \(capacities)명입니다."
+          case _ where capacities > 30 :
+              roomDescription = "\(roomName)의 정원은 \(capacities)명이며 별도의 사용신청이 필요합니다."
+          default:
+              roomDescription = "\(roomName)의 정보를 다시 확인해 주십시요."
+          }
+          result.append(roomDescription)
       }
+      return result
   }
+
+  identifyingRoom()
+
   ```
 
   ​
+
+
 

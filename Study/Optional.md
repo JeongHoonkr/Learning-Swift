@@ -10,6 +10,8 @@
 > 2. 인스턴스에 지정된 값이 없다. -> 이를 ```nil```이라 한다.
 >
 > 따라서 Optional이 적용되지 않은 인스턴스는 nil이 될 수 없다.
+>
+> 또한 Optional변수는 초기화하지 않으면 nil로 자동으로 초기화된다.
 
 ``` swift
 var myAge: Int
@@ -152,21 +154,18 @@ if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
 >
 > 암시적 언래핑을 사용하는 이유는 옵셔널타입보다는 더 명확하게 값을 항상 가질 수 있을때 사용한다.
 >
-> 즉 굳이 옵셔널로 선언해서 값을 사용할때마다 언래핑할 수고를 덜어주는 것이다.
->
-> 하지만 nil일 가능성을 완전히 베재할 수 업
+> 즉 굳이 옵셔널로 선언해서 값을 사용할때(접근할때x)마다 언래핑할 수고를 덜어주는 것이다.
 
 
 
 > 아래는 암시적 언래핑을 사용해본 예이며 아래와 같은 사실을 알 수 있다.
 >
-> 1. 타입끝에 `!`이 붙어도  ```optional``` 타입이다.
-> 2. 즉 늘 ```nil```이 아닌 값을 갖는다는 가정을 내포하고 있다.
-> 3. 하지만 nil 값을 가질 수 없는 것은 아니다. ```optional```이기 때문에 ```nil```도 될 수 있다.
-> 4. 장점 : 값이 필요한 시점에 `!`을 쓰지 않아도 자동으로 언래핑된다. (if let, gurad let 무필요)
-> 5. 단, 콘솔로그에 Optional()이 찍히게 하지 않고 싶다면 값에 '!'를 붙여야 한다.
-> 6. 이 때  `?`를 썼을 때와 마찬가지로 nil이라면?  런타임 에러가 발생한다.
-> 7. **따라서 nil 검사는 항상 해줘야 한다.**
+> 1.  ```nil```이 아닌 값을 갖는다는 가정을 내포하고 있다.
+> 2. 하지만 nil 값을 가질 수 없는 것은 아니다. ```optional```이기 때문에 ```nil```도 될 수 있다.
+> 3. 장점 : 값이 필요한 시점에 `!`을 쓰지 않아도 자동으로 언래핑된다. (if let, gurad let 무필요)
+> 4. 단, 콘솔로그에 Optional()이 찍히게 하지 않고 싶다면 값에 '!'를 붙여야 한다.
+> 5. 이 때  `?`를 썼을 때와 마찬가지로 nil이라면?  런타임 에러가 발생한다.
+> 6. **따라서 nil 검사는 항상 해줘야 한다.**
 
 
 
@@ -246,16 +245,20 @@ if let pocketmonSkill = pickachu.skill?.usefulSkill {
 
 ```swift
 var rocketDamage: String?
-var totalDamage: String!
+var totalDamage: String?
 var baseDamage: Int = 150
 rocketDamage = "300"
 
+// 옵셔널 바인딩 중첩
 if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
 {
     totalDamage = "our planet was damaged by \(theDamage + baseDamage)"
 }
-/// 아래에서 수정할 부분 
-var announcement: String = totalDamage?.uppercased()
+
+// tatalDamage?에서 ?부분이 옵셔널체이닝 시작을 알림
+// totalDamage가 nil이라면 announcement에 nil을 대입하고  
+// 값이 있다면 그 뒤가 실행되어 대문자로 변환한 값을 대입
+var announcement = totalDamage?.uppercased()
 print(announcement)
 ```
 
@@ -294,6 +297,30 @@ print(announcement)
 // 위에 방법이 나은것 같기도 하다 흠...
 announcement?.append(" Please run away")
 print(announcement)
+```
+
+
+
+> 위 사항들을 정리하면 아래와 같다.
+>
+> 1. 생각할거리 : totalDamage가 암시적언래핑된 값이라면 아래 내용은 어떻게 바꿔보면 될까
+
+```swift
+var rocketDamage: String?
+var totalDamage: String?
+var baseDamage: Int = 150
+rocketDamage = "300"
+
+if let damage = rocketDamage, let theDamage = Int(damage), theDamage == 300
+{
+    totalDamage = "our planet was damaged by \(theDamage + baseDamage)."
+}
+
+// 생각할거리를 토대로 바꿔보기
+totalDamage?.append(" Please run away")
+var announcement: String! = totalDamage?.uppercased()
+print (announcement)
+// 현재 상태에서의 출력결과 : OUR PLANET WAS DAMAGED BY 450. PLEASE RUN AWAY!
 ```
 
 
