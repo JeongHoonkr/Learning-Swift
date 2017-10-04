@@ -62,7 +62,7 @@
 
 * where의 사용
 
-  >  case의 값에 동적필터 즉 조건의 범주를 추가하기
+  >  조건의 범주를 추가하기
 
   ```swift
   var statusCode: Int = 204
