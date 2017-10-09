@@ -51,7 +51,9 @@ myAge = nil
 
 #####      2-2-1. **forced unwrapping**
 
-> 이 경우 강제로 값을 가져올 수 있는데 이를 forced unwrapping(강제언래핑)이라고 한다.
+> 이 경우 값이 있다고 확신할 수 있기 때문에 강제로 값을 가져올 수 있는데 
+>
+> 이를 forced unwrapping(강제언래핑)이라고 한다.
 >
 > "404"라는 String타입의 값을 errorCodeString에 넣어주고 "404"라는 타입의 갑만 강제로 빼오고
 >
@@ -65,7 +67,9 @@ print (theError)}/// 출력결과 : 404
 
 >그러나 위와 같은 경우는 우리가 "404"라는 String타입의 값을 넣어준 것이 분명하지만, 만약 값이 없는 즉 nil일 수있는 상황이라면 런타임 오류로 앱은 강제종료되고 말것이다. 따라서 '!'강제 언래핑은 사용시 주의해야 하며,
 >
->사용자체도 자제해야 한다.
+>사용자체도 자제해야 한다. 
+>
+>**<링고스타 강사의 말 : 개발자의 확신은 경험적으로 수많은 에러를 만들어 낸다. !가 많은 코드는 나쁜코드다.>**
 
 
 
@@ -152,9 +156,13 @@ if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
 >
 > 사용하며, 강제언래핑은 값에 '!'를 붙여서 사용한다.
 >
-> 암시적 언래핑을 사용하는 이유는 옵셔널타입보다는 더 명확하게 값을 항상 가질 수 있을때 사용한다.
+> 암시적 언래핑을 사용하는 이유는 초기화 이후 항상 가질 수 있을때에만 편의를 위해 사용한다.
 >
-> 즉 굳이 옵셔널로 선언해서 값을 사용할때(접근할때x)마다 언래핑할 수고를 덜어주는 것이다.
+> 즉 굳이 옵셔널로 선언해서 값을 사용할때마다 언래핑할 수고를 덜어주는 것이다.
+>
+> <예를들어 프로그램 구동시에는 값이 없어 nil인 변수가 프로그램이 실제 구동되면 항상 값을 가질때
+>
+> 암시적 언래핑 옵셔널을 사용할 수 있다.>
 
 
 
@@ -170,28 +178,30 @@ if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
 
 
 ```swift
-// 0. 암시적 언래핑 공부
-// 0-1. 배열에 넣어보고 값으로 사용하기
-var publishingCompany : String = "출판한다책"
-var writer : String! = "쓴다책"
+// 암시적 언래핑 공부
+// 초기값은 nil로 선언하기
+// 배열에 넣어보고 값으로 사용하기
+var publishingCompany : String! = nil
+var writer : String! = nil
 var bookTitle : String! = nil
+publishingCompany = "출판한다책"
+writer = "쓴다책"
 bookTitle = "정복한다 스위프트"
 
 var book: [String] = [publishingCompany, writer, bookTitle]
 
 func makingBook () -> String {
-    let theBook = ("\(book[0])에서 출판하고 \(book[1]) 작가님이 집필하신 \(book[2]) 11월 출판예정")
+    var theBook: String = ""
+    theBook += ("\(book[0])에서 출판하고 \(book[1]) 작가님이 집필하신 \(book[2]) 11월 출판예정")
     return theBook
 }
 print(makingBook())
 
-// 0-2. 값으로 사용할때 강제언래핑하기와 안하기
+// 0-2. 값으로 사용할때 언래핑하기와 안하기
 var country : String = "South Korea"
 var province : String! = nil
 var street : String! = "kangseok"
 province = "Kyung ki do"
-
-print("\(country), \(province), \(street!)")
 ```
 
 > 아래는 암시적 언래핑된 값이 nil일때 강제언래핑해서 값 그자체로 사용하고자 할때 에러 예시이다.

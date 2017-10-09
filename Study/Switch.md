@@ -63,6 +63,8 @@
 * where의 사용
 
   >  조건의 범주를 추가하기
+  >
+  > where문을 사용하는 케이스에 사용할 상수나 변수가 있다면 선언해주고 없다면 와일드카드로 대체한다.
 
   ```swift
   var statusCode: Int = 204
@@ -103,27 +105,44 @@
 * Switch 응용
 
     ```swift
-  let point = (x: 1, y: 4)
-
-  switch point {
-  case let q1 where ((point.x > 0) && (point.y > 0)) :
-      print("\(q1) is in quadrant 1")
-      fallthrough
-  case (_, 4):
-      print("\(point) sits on the x-axis")
-  case let q2 where (point.x < 0) && (point.y > 0):
-      print("\(q2) is in quadrant 2")
-  case let q3 where (point.x < 0) && (point.y > 0):
-      print("\(q3) is in quadrant 3")
-  case let q4 where (point.x > 0) && (point.y > 0):
-      print("\(q4) is in quadrant 4")
-
-  case (0, _):
-      print("\(point) sits on the y-axis")
-      
-  default:
-      print ("Case not covered")
+  func findingTreasure (xAxis x: Double, yAxis y: Double) -> String {
+      let inputCood = (x, y)
+      var description: String = ""
+      switch inputCood {
+      case let correctAnswer where ((x == 13.5) && (y == 16.5)) :
+          description = "\(correctAnswer)은 보물이 있는 위치 입니다."
+      case (_, 16.5):
+          description = "거의다 왔군요 x축만 찾으면 됩니다."
+      case (13.5, _):
+          description = "거의다 왔군요. y축만 찾으면 됩니다."
+      case _ where (x > 7 && x < 12.5) && (y > 11 && y < 16):
+          description = "조금 더 찾아보세요."
+      default:
+          print ("지도 보는 법부터 찾으세요")
+      }
+      return description
   }
+
+  print(findingTreasure(xAxis: 12.0, yAxis: 15.5))
+  // 출력결과 조금 더 찾아보세요.
     ```
+
+* ```swift
+  func beers (name: String, amount: Int) {
+      let cart = (name, amount)
+      switch cart {
+      case ("beer", 0...3) : //맥주 3병 이하
+          print("Guide to small item counter")
+      case ("beer", 51...100) : //맥주 51병이상 100병 까지
+          print("Call manager")
+      case ("beer", let amount) where amount > 100 : //맥주 100병 초과
+          print("Call police")
+      default: //나머지(맥주 4병 이상 50병 이하)
+          print("Make wait in line")
+      }
+  }
+  print(beers(name: "beer", amount: 1))
+
+  ```
 
   ​

@@ -44,8 +44,40 @@
   let aboutMe = (myBucketList, myFavoriteNum)
   aboutMe
 
+
+  // 6. 튜플응용
+  var (myFriendList, myNum, movie) = (["정우", "상은", "영현"], [7,13,53], "남한산성")
+  myFriendList.append(movie)
   ```
 
+
+
+* ```typeAlias``` 의 사용
+
+  > 어떤 자료형의 별명을 지어 사용할 수 있는 기능을 말한다.
+
+  ```swift
+  typealias BankType = (bankName: String, presidentName: String?, amoutofAccount: Int?, address: String?)?
+  let shinhanBank: BankType = ("신한은행", "최현석", 2125, "어딘가")
+
+  // 생각할거리 : 값중에 nill이 있을 경우 전체가 출력이 안된다. 어떻게 해야 할까
+  let kookminBank: BankType = ("국민은행", "최정훈", 1155, nil)
+
+  typealias school = (amonutClass: Int?, location: String?, isvacation: Bool)?
+  let ksSchool: school = (nil, nil, true)  // 전체가 nil은 아니다.
+  ```
+
+  ```swift
+  // 위 신한은행에 대한 옵셔널 바인딩 및 체이닝
+
+  var announcement: String = ""
+  if let bName = shBank?.bankName, let pName = shBank?.presidentName, let amount = shBank?.amoutofAccount, let address = shBank?.address {
+      announcement = "\(bName)의 은행장은 \(pName)이고, 총 보유계좌수는 \(amount)개 이며, 주소는 \(address)입니다."
+  }
+  print(announcement)	
+  ```
+
+  ​
 
 
 * 응용: 튜플과 스위치
@@ -110,4 +142,17 @@
   ​
 
 
+
+* 튜플과 TypeAlias 사용
+
+  ```swift
+  typealias watchType = (name: String?, installedApp: Int?)?
+  let watchDevice: watchType = ("정훈의 아이폰", 21)
+
+  if let phoneName = watchDevice?.name, let amountApp = watchDevice?.installedApp {
+      print ("\(phoneName)에는 \(amountApp)개의 앱이 설치되어 있습니다.")
+  }
+  ```
+
+  ​
 
