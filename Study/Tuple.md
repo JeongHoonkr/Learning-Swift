@@ -58,7 +58,7 @@
 
   ```swift
   typealias BankType = (bankName: String, presidentName: String?, amoutofAccount: Int?, address: String?)?
-  let shinhanBank: BankType = ("신한은행", "최현석", 2125, "어딘가")
+  let shBank: BankType = ("신한은행", "최현석", 2125, "어딘가")
 
   // 생각할거리 : 값중에 nill이 있을 경우 전체가 출력이 안된다. 어떻게 해야 할까
   let kookminBank: BankType = ("국민은행", "최정훈", 1155, nil)

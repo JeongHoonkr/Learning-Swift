@@ -38,7 +38,6 @@ var myBasket8 = Array<Int>(1...5)
 var myBucketList: [String] = ["스위스 여행또가기", "앱출시해서 1등하기"]
 
 var addList = ["단독주택 짓기", "스위스 수네가 하이킹", "강아지키우기", "눈덮힌 한라산 오르기", "눕자마자 잠들기 성공"]
-
 for i in addList {
     myBucketList.append(i)
 }
