@@ -90,7 +90,7 @@ let somoneWeight = myWeight!
 
 >  옵셔널에 값이 있다면(즉 if조건이 참일때) 임시 상수나 변수에 그 값을 지정하고 코드블럭을 사용하는 것
 >
-> 조건문에서 임시값을 변경해야 한다면 if var를 사용하여 변수로 선언한다.
+>  조건문에서 임시값을 변경해야 한다면 if var를 사용하여 변수로 선언한다.
 
 ```swift
 var errorCodeString: String?
@@ -169,11 +169,11 @@ if let myphoneNum = myFavoriteStringNum, let myphoneNumInt = Int(myphoneNum)
 > 아래는 암시적 언래핑을 사용해본 예이며 아래와 같은 사실을 알 수 있다.
 >
 > 1.  ```nil```이 아닌 값을 갖는다는 가정을 내포하고 있다.
-> 2. 하지만 nil 값을 가질 수 없는 것은 아니다. ```optional```이기 때문에 ```nil```도 될 수 있다.
-> 3. 장점 : 값이 필요한 시점에 `!`을 쓰지 않아도 자동으로 언래핑된다. (if let, gurad let 무필요)
-> 4. 단, 콘솔로그에 Optional()이 찍히게 하지 않고 싶다면 값에 '!'를 붙여야 한다.
-> 5. 이 때  `?`를 썼을 때와 마찬가지로 nil이라면?  런타임 에러가 발생한다.
-> 6. **따라서 nil 검사는 항상 해줘야 한다.**
+> 2.  하지만 nil 값을 가질 수 없는 것은 아니다. ```optional```이기 때문에 ```nil```도 될 수 있다.
+> 3.  장점 : 값이 필요한 시점에 `!`을 쓰지 않아도 자동으로 언래핑된다. (if let, gurad let 무필요)
+> 4.  단, 콘솔로그에 Optional()이 찍히게 하지 않고 싶다면 값에 '!'를 붙여야 한다.
+> 5.  이 때  `?`를 썼을 때와 마찬가지로 nil이라면?  런타임 에러가 발생한다.
+> 6.  **따라서 nil 검사는 항상 해줘야 한다.**
 
 
 
@@ -400,4 +400,6 @@ totalDamage = nil
 var gotDamage = totalDamage?.uppercased() ?? "No Damage"
 print (gotDamage)
 ```
+
+
 

@@ -76,10 +76,3 @@ print(3,14,89,15, separator: ",")
 ```
 
 
-
-> String의 사용
-
-```swift
-
-```
-
