@@ -2,7 +2,19 @@
 
 
 
-###  01. Swift 문법 
+### 00. 기초튼튼?
+
+------
+
+
+
+- [프로그래밍과 친구하기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/프로그래밍%20기초.md) (작성중)
+
+###  
+
+
+
+### 01. Swift 문법 
 
 ------
 
@@ -11,13 +23,14 @@
 ***습득하는 내용 있을시 지속적으로 업데이트***
 
 - [Set](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Set.md)
+- [optional](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Optional.md) guard-let은 아직!
 - [Array](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Array.md)
 - [Dictionary](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Dictionary.md)
 - [substring](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/what%20is%20substring.md)
 - [tuple](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Tuple.md)
 - [switch](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Switch.md)
 - [String](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/String.md)
-- [Function](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function.md)
+- [Function](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function.md) <1,2,3 시리즈로 구성해야 할듯?>
 
 
 
@@ -25,7 +38,7 @@
 
 ------
 
-**코드로 실습해본 내용을 정리한것**
+**무엇이라도 코드로 실습해본 내용은 올려보기**
 
 - [Fizz Buzz 풀이](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Fizz%20Buzz%20풀이.md)
 - [연속된 중복숫자 줄이기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/연속된%20중복숫자%20줄이기.md)
@@ -44,9 +57,32 @@
 
 
 
+### 04. GIT이랑 친구하기
+
+------
+
+- 넌 누구니?
 
 
-### 04. 애플 공식문서 링크
+- 아직은 서먹한 사이
+
+  ​
+
+
+
+### 05. 오직 Git을 위한 터미널
+
+------
+
+- 터미널….Git으로 가는길
+
+
+
+
+
+
+
+### 06. 애플 공식문서 링크
 
 ------
 
@@ -54,11 +90,7 @@
 
 
 
-
-
-
-
-### 05. 참고 사이트
+### 07. 참고 사이트
 
 ------
 
@@ -66,11 +98,7 @@
 
 
 
-
-
-
-
-### 06. 유용한 깃허브들
+### 08. 유용한 깃허브들
 
 ------
 
