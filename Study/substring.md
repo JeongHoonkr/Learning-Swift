@@ -25,11 +25,71 @@ let firstSentence = greeting[...endOfSentence]
 
 - 내가 사용해본 함수
 
-> ```index(of: )``` 메소드와 삼항연산자
+> `index(of: )` 함수와 nil결합연산자 사용
 >
-> ```prefix(upTo: )``` : [원문](https://developer.apple.com/documentation/swift/string/2893967-prefix)
+> - String의 범위 서브스크립트를 사용하여 원하는 숫자를 추출해냄
+> - index of 함수의 반환타입이 옵셔널이기 때문에 nil결합연산자를 사용해주거나, 옵셔널 바인딩을 해야함
+
+```swift
+var cmUnitNum : String = "14444444cm"
+cmUnitNum = "142m"
+
+if cmUnitNum.contains("cm") {
+    let firstCharOfUnit = cmUnitNum.index(of: "c") ?? cmUnitNum.endIndex
+    let justNum = cmUnitNum[..<firstCharOfUnit]
+    print (String("\(Double(justNum)!/100)m"))
+} else {
+    let firstCharOfUnit = cmUnitNum.index(of: "m") ?? cmUnitNum.endIndex
+    let justNum = cmUnitNum[..<firstCharOfUnit]
+    print (String("\(Double(justNum)!*100)cm"))
+}
+```
+
+#### 
+
+> `prefix(upTo: )`의 정의 : [원문](https://developer.apple.com/documentation/swift/string/2893967-prefix)
 >
-> ```trimmingCharacters(in: )``` <— 이거는 stringProtocol임
+> upto 포지션의 전까지 포함하여 반환한다.
+
+```swift
+let numbers = [10, 20, 30, 40, 50, 60]
+if let i = numbers.index(of: 40) {
+    print(numbers.prefix(upTo: i))
+}
+// Prints "[10, 20, 30]"
+```
+
+> 삼항연산자 사용해서 내용변경
+
+```
+var (unitNumCm, just) = ("1.5m", "")
+if unitNumCm.contains("cm") {
+    just += unitNumCm.prefix(upTo: unitNumCm.index(of: "c")!)
+} else {
+    just += unitNumCm.prefix(upTo: unitNumCm.index(of: "m")!)
+}
+unitNumCm.contains("cm") ? print("\(Double(just)!/100)m") : print("\(Double(just)!*100)cm")
+```
+
+
+
+> `trimmingCharacters` 사용해서 구현
+
+이 함수는 양끝의 문자를 지정해준 character로 제거해주는데, 제거하려는 character가
+
+양끝중에서 한쪽에만 있어도 에러없이 제거 후 제거된 값을 반환해준다
+
+만약 제거하려는 값만으로 구성되어 있다면 반복해서 제거후 빈문자열을 반환한다.
+
+```swift
+// version[3] : trimmingCharacters 사용
+let cmStr = "145cm"
+if cmStr.contains("cm") {
+    print("\(Double(cmStr.trimmingCharacters(in: ["c","m"]))! / 100)m")
+} else {
+    print("\(Double(cmStr.trimmingCharacters(in: ["m"]))! * 100)cm")
+}
+```
 
 
 
@@ -41,7 +101,7 @@ let firstSentence = greeting[...endOfSentence]
 
 #### 5. substring 사용
 
-**```endIndex```** 의 정의
+**```endIndex```** 의 정의를 잘 생각하고 사용하자!  
 
 ![d](http://postfiles12.naver.net/MjAxNzEwMTlfMjU3/MDAxNTA4NDAxMTkzOTYy.pOnpvUWSswqijhQf5KCURVXRVKXnIIkEdVJ-InNCRLEg.z4foMADkHiCYh9DsS7ZVVfj3eIzsE6gnhJJf4bFpccEg.PNG.bb_9900/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2017-10-19_%EC%98%A4%ED%9B%84_5.19.04.png?type=w773)
 
