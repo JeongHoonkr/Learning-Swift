@@ -18,9 +18,9 @@
 
 ------
 
-**원칙 : 최대한 내가 이해한 언어로 적기, 원문을 해석하더라도 이해한 다음 적기**
+>  **원칙 : 복붙금지 - 내가 이해한 언어로 적기, 코드를 따라치더라도 내용을 바꿔서 쳐보기**
 
-***습득하는 내용 있을시 지속적으로 업데이트***
+>  ***습득하는 내용 있을시 지속적으로 업데이트***
 
 - [Set](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Set.md)
 - [optional](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Optional.md) guard-let은 아직!
@@ -30,7 +30,7 @@
 - [tuple](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Tuple.md)
 - [switch](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Switch.md)
 - [String](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/String.md)
-- [Function](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function.md) <1,2,3 시리즈로 구성해야 할듯?>
+- [Function](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function.md) <basic, intermediate, advanced>
 
 
 
@@ -47,15 +47,15 @@
 
 
 
-### 03. 과제수행
+### 03. 과제수행 
 
 ------
 
 - 베이스볼 게임 version[[1]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v01.md), [[2]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v02.md), [[3]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v03.md)
 
-- 길이 단위변환 출력 ([간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/unitaryTransformation/blob/master/UnitWithFunc.playground/Contents.swift), Ing...)
-
-
+- 길이 단위변환 출력
+  * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/unitaryTransformation/blob/master/UnitWithFunc.playground/Contents.swift), 
+  * 디버깅영역에 인풋값을 받아서 길이 변환하기
 
 ### 04. GIT이랑 친구하기
 
@@ -67,8 +67,6 @@
 - 아직은 서먹한 사이
 
   ​
-
-
 
 ### 05. 오직 Git을 위한 터미널
 
