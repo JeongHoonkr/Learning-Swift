@@ -54,7 +54,7 @@
 - 베이스볼 게임 version[[1]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v01.md), [[2]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v02.md), [[3]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v03.md)
 
 - 길이 단위변환 출력
-  * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/unitaryTransformation/blob/master/UnitWithFunc.playground/Contents.swift), 
+  * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위변환%20함수.md), 
   * 디버깅영역에 인풋값을 받아서 길이 변환하기
 
 ### 04. GIT이랑 친구하기
