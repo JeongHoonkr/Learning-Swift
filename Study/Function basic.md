@@ -1,4 +1,4 @@
-## 함수 기본
+## Function Basic
 
 
 
@@ -70,14 +70,17 @@ func greeting (to names: String...) {
 
 print(greeting(to: "송", "삼규", "승민", "일한"))
 
-func divid(score: Int...) -> Double {
-    var result: Double = 0
+// 점수를 받아서 평균을 반환하기
+func getAverageScore (from score: Int...) -> Double {
+    var result: Double = 0.0
     for i in score {
         result += Double(i)
     }
-    return result / Double(score.count)
+    return result/Double(score.count)
 }
-print(divid(score: 10, 20, 30, 40, 50)) //30.0
+print(getAverageScore(from: 65,70,80,75,100))
+
+// 생각해볼거리 : UI를 할때 사용해볼 수 있을듯? 
 ```
 
 
@@ -86,7 +89,9 @@ print(divid(score: 10, 20, 30, 40, 50)) //30.0
 
 > 파라미터에는 기본값을 줄 수 있다. 즉 파라미터 이름과 타입뿐 아니라 디폴트로 값을 지정해줄 수 있다.
 >
-> 디폴트 값은 아래이미지에서처럼 호출시 그대로 사용할 수도 변경할 수도 있다. 
+> 디폴트 값은 **아래 이미지에서처럼 호출시 그대로 사용할 수도 변경할 수도 있다.** 
+>
+> ![dd](http://postfiles2.naver.net/MjAxNzEwMDVfMTE2/MDAxNTA3MjA1MzQzMDY2.HR2I2qDRlcS28EZgPTbX0-9BydrpJh1B3piCBvMWinMg.QVvbI68Sw3BaRrf8W6bDPp5sQFKbj3srWjqhLiQAZdkg.PNG.bb_9900/스크린샷_2017-10-05_오후_9.07.31.png?type=w773)
 >
 > 그대로 사용한다면 기본값 인자가 없는 함수를 사용하면 된다.
 
@@ -97,9 +102,7 @@ func multiple (firstNum: Int!, secondNum: Int?, punctuation: String = "!") {
         print ("\(numFirst) + \(numSecond) = \(numFirst + numSecond) 입니다.\(punctuation)")
     }
 }
-
-
 print(multiple(firstNum: 4, secondNum: 5))
 ```
 
-![dd](http://postfiles2.naver.net/MjAxNzEwMDVfMTE2/MDAxNTA3MjA1MzQzMDY2.HR2I2qDRlcS28EZgPTbX0-9BydrpJh1B3piCBvMWinMg.QVvbI68Sw3BaRrf8W6bDPp5sQFKbj3srWjqhLiQAZdkg.PNG.bb_9900/스크린샷_2017-10-05_오후_9.07.31.png?type=w773)
+
