@@ -55,7 +55,7 @@
 
 - 길이 단위변환 출력
   * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위변환%20함수.md), 
-  * 디버깅영역에 인풋값을 받아서 길이 변환하기
+  * [길이값 입력 및 조건문](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이%20값%20입력%20및%20조건문.md)
 
 ### 04. GIT이랑 친구하기
 
