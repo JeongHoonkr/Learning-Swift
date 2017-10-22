@@ -61,7 +61,7 @@ if let i = numbers.index(of: 40) {
 
 > 삼항연산자 사용해서 내용변경
 
-```
+```swift
 var (unitNumCm, just) = ("1.5m", "")
 if unitNumCm.contains("cm") {
     just += unitNumCm.prefix(upTo: unitNumCm.index(of: "c")!)
