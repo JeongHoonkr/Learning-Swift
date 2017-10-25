@@ -47,20 +47,30 @@
 
 
 
-### 03. 과제수행 
+### 03. 과제수행  
 
 ------
+
+**과제는 동일과제의 후순위로 갈수록 기존내용에 요구사항이 추가되어 리팩토링되는 구조입니다.**
 
 - 베이스볼 게임 version[[1]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v01.md), [[2]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v02.md), [[3]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v03.md)
 
 - 길이 단위변환 출력
   * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위변환%20함수.md), 
+
   * [길이값 입력 및 조건문](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이%20값%20입력%20및%20조건문.md)
+
   * [인치 길이 변환과 예외 처리](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/인치%20길이%20변환과%20예외%20처리.md)
+
+  * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/야드%20길이%20변환과%20반복입력.md)
+
+    ​
 
 ### 04. GIT이랑 친구하기
 
 ------
+
+**우린 언제쯤 베프가 될 수 있을까!**
 
 - 넌 누구니?
 
