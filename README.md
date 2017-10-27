@@ -64,6 +64,8 @@
 
   * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/야드%20길이%20변환과%20반복입력.md)
 
+  * [무게,부피 단위 추가](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/무게%2C부피단위%20추가.md)
+
     ​
 
 ### 04. GIT이랑 친구하기
