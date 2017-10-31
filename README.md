@@ -20,7 +20,7 @@
 
 >  **원칙 : 복붙금지 - 내가 이해한 언어로 적기, 코드를 따라치더라도 내용을 바꿔서 쳐보기**
 
->  ***습득하는 내용 있을시 지속적으로 업데이트***
+>  ***습득하는 내용 있을시 지속적으로 업데이트***.
 
 - [Set](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Set.md)
 - [optional](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Optional.md) guard-let은 아직!
