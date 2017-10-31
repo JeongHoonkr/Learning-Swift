@@ -26,7 +26,7 @@
 - [optional](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Optional.md) guard-let은 아직!
 - [Array](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Array.md)
 - [Dictionary](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Dictionary.md)
-- [substring](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/what%20is%20substring.md)
+- [substring](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/substring.md)
 - [tuple](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Tuple.md)
 - [switch](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Switch.md)
 - [String](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/String.md)
