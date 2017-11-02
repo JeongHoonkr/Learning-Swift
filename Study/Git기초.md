@@ -113,3 +113,10 @@ mergge는 커밋2개를 합쳐서 새로운 커밋을 만들어주는것
 리베이스는 내 브랜치와 머지할 브랜치들의 차이점을 들어서 대상에 ? (마스터에서는 리베이스하는거 아님)
 
 git branch -d 지울브랜치이름
+
+
+
+pr하는 이미지다 base는 나의 저장소 -> 컴페어는 사다리를 위해 브랜치 생성한 장소다
+
+![pr하기](http://postfiles13.naver.net/MjAxNzEwMzBfMTkx/MDAxNTA5MzQ0MTY2MDM3.UCebLz4N-jV31MjZ0HZmXb3Zy6mNpJWSCuTIaxtqBz8g.5y-2IkuQezvaDI5DSy4QMATHN7-tOXTCj6T_jcRbFBog.PNG.bb_9900/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2017-10-30_%EC%98%A4%ED%9B%84_3.09.41.png?type=w773)
+
