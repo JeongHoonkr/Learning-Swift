@@ -63,8 +63,8 @@
   * [무게,부피 단위 추가](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/무게%2C부피단위%20추가.md)
   * [단위변환기 최종](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EC%B5%9C%EC%A2%85.md)
 - 사다리
-  * [1단계](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.md) (배열로 구현전)
-  * [2단계 (메소드 분리)](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%202%EB%8B%A8%EA%B3%84.md)
+  * [1단계<배열로구현전>](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.md) ([배열로 구현](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%201%EB%8B%A8%EA%B3%84%EB%B0%B0%EC%97%B4%EB%A1%9C%20%EA%B5%AC%ED%98%84.md))
+  * [2단계 (메소드분리)](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%202%EB%8B%A8%EA%B3%84%20%EB%A9%94%EC%86%8C%EB%93%9C%20%EB%B6%84%EB%A6%AC%20%EB%B0%8F%20%EC%9D%B8%EB%8D%B4%ED%8A%B8%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
 
 ### 04. GIT이랑 친구하기
 
