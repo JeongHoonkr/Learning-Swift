@@ -55,21 +55,16 @@
 **과제는 동일과제의 후순위로 갈수록 기존내용에 요구사항이 추가되어 리팩토링되는 구조입니다.**
 
 - 베이스볼 게임 version[[1]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v01.md), [[2]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v02.md), [[3]](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Baseball%20Game%20v03.md)
-
-- 길이 단위변환 출력
+- 단위변환기
   * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위%20변환%20및%20출력해보기.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이단위변환%20함수.md), 
-
   * [길이값 입력 및 조건문](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/길이%20값%20입력%20및%20조건문.md)
-
   * [인치 길이 변환과 예외 처리](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/인치%20길이%20변환과%20예외%20처리.md)
-
   * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/야드%20길이%20변환과%20반복입력.md)
-
   * [무게,부피 단위 추가](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/무게%2C부피단위%20추가.md)
-
   * [단위변환기 최종](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EC%B5%9C%EC%A2%85.md)
-
-    ​
+- 사다리
+  * [1단계](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.md) (배열로 구현전)
+  * [2단계 (메소드 분리)](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%202%EB%8B%A8%EA%B3%84.md)
 
 ### 04. GIT이랑 친구하기
 
