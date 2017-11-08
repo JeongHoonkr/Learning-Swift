@@ -30,7 +30,7 @@
 - [tuple](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Tuple.md)
 - [switch](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Switch.md)
 - [String](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/String.md)
-- Function [[basic](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function%20basic.md), intermediate, advanced]
+- Function [[basic](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function%20basic.md), [intermediate](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Function%20intermediate.md), advanced]
 
 
 
