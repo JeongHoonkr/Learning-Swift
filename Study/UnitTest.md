@@ -103,3 +103,10 @@ class SetUpAndTearDownExampleTestCase: XCTestCase {
 }
 ```
 
+
+
+
+
+### 3. 테스트함수 작성시 유의사항
+
+* 테스트함수는 잘게 쪼개져야 하고, 한 함수는 하나의 테스트메소드만 갖어야 한다.
