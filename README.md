@@ -10,9 +10,7 @@
 
 - [프로그래밍과 친구하기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/프로그래밍%20기초.md) (작성중)
 
-###  
-
-
+### 
 
 ### 01. Swift 문법 
 
@@ -66,6 +64,7 @@
   * [1단계<배열로구현전>](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.md) ([배열로 구현](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%201%EB%8B%A8%EA%B3%84%EB%B0%B0%EC%97%B4%EB%A1%9C%20%EA%B5%AC%ED%98%84.md))
   * [2단계 (메소드분리)](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%202%EB%8B%A8%EA%B3%84%20%EB%A9%94%EC%86%8C%EB%93%9C%20%EB%B6%84%EB%A6%AC%20%EB%B0%8F%20%EC%9D%B8%EB%8D%B4%ED%8A%B8%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
   * 3단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%203%EB%8B%A8%EA%B3%84%20%EA%B0%9D%EC%B2%B4%20%EC%97%AD%ED%95%A0%20%EB%B6%84%EB%8B%B4.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/사다리게임%203단계%20v02.md)), ([v03](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/사다리게임%203단계%20v03.md)), ([v04](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20V04.md)), ([v05](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%94%94%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v05.md))
+  * 4단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v02.md))
 
 ### 04. GIT이랑 친구하기
 
