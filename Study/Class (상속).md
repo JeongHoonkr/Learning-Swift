@@ -48,6 +48,16 @@ jeongHoon.name = "정훈"
 * 속성 접근제한을 private(set) 으로 get만 가능하게 했으면 getter만 override 하면 된다.
 
 ```swift
+// 부모클래스 비클
+class Vehicle {
+    var currentSpeed: Double = 0.0
+    var description: String {
+        get {
+            return "시간당 \(currentSpeed)의 속도로 이동하고 있습니다."
+        }
+    }
+}
+
 // 자식클래스 차 (비클을 상속)
 class Car: Vehicle {
     var gear = 0
@@ -59,7 +69,9 @@ class Car: Vehicle {
             return Double(self.engineLevel * 50)
         }
         set {
-            // 아무것도 하지 않아도 필요
+            // 아무것도 하지 않아도 필요하지만
+            // 부모클래스(superClass)에서 그냥 var로 선언하고 
+            // setter 부분을 { } 라고 쓰면 setter 동작을 없애버린게 되서 값이 저장이 안된다.
         }
     }
     
@@ -86,34 +98,10 @@ print(jeongHoonCar.description)
 
 >저장형 프로퍼티는 자식클래스에서 재정의는 불가능 하지만, init 할 때 값을 새로 할당하는것은 가능합니다. 1번 해결을 위해 연산 프로퍼티를 사용해도 되지만 단순 값 할당이라면 이와 같이 해도 될 것 같네요.
 
-
-
-
-
-> 아래와 같이 부모클래스(superClass)에서 그냥 var로 선언하고 setter 부분을 { } 라고 쓰면 
->
-> setter 동작을 없애버린게 되서 값이 저장이 안된다.
-
-```
-class JeongHoonBank: Bank {
-    override var name: String {
-        get {
-            return "정훈뱅크"
-        }
-        set {
-        }
-    }
-}
-
-class Bank {
-    var name: String = "Korea Bank"
-}
-
-
-var bank = JeongHoonBank()
-
-
-bank.name = "정훈님뱅크"
-print(bank.name) // 정훈뱅크로 찍힘
+```swift
+// 코드로 연습전
 ```
 
+
+
+<추가적으로 공부해서 정리할 사이트 : [링크](http://minsone.github.io/mac/ios/swift-initialization-summary)
