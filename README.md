@@ -67,7 +67,8 @@
   * 3단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%203%EB%8B%A8%EA%B3%84%20%EA%B0%9D%EC%B2%B4%20%EC%97%AD%ED%95%A0%20%EB%B6%84%EB%8B%B4.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/사다리게임%203단계%20v02.md)), ([v03](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/사다리게임%203단계%20v03.md)), ([v04](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20V04.md)), ([v05](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%94%94%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v05.md))
   * 4단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v02.md))
 - 좌표계산기
-  * 2단계
+  * [2단계](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%202%EB%8B%A8%EA%B3%84.md)
+  * 3단계
 
 ### 04. GIT이랑 친구하기
 
