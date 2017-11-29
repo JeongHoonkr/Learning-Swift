@@ -68,7 +68,7 @@
   * 4단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v02.md))
 - 좌표계산기
   * [2단계](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%202%EB%8B%A8%EA%B3%84.md)
-  * 3단계
+  * 3단계 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%203%EB%8B%A8%EA%B3%84.md))
 
 ### 04. GIT이랑 친구하기
 
