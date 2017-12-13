@@ -9,6 +9,8 @@
 
 
 - [프로그래밍과 친구하기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/프로그래밍%20기초.md) (작성중)
+- 수학기초
+  * 기초기하학 ([선과 각](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%88%98%ED%95%99/%EA%B8%B0%EC%B4%88%EA%B8%B0%ED%95%98%ED%95%99/%EC%84%A0%EA%B3%BC%EA%B0%81.md))
 
 ### 
 
