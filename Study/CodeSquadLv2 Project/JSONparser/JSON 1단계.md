@@ -35,7 +35,7 @@ for value in stringValues {
 
 
 
-(2) `NSRegularExpression` 
+(2) [NSRegularExpression](https://developer.apple.com/documentation/foundation/nsregularexpression) 
 
 > 정규표현식 일명 "regex", 특정한 패턴을 지정하는 문자열 또는 시퀀스이다.
 >
