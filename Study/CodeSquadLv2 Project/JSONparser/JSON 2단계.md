@@ -14,9 +14,8 @@
 
 ##### 어려웠던 점
 
-> 단위변환기 이후 딕셔너리를 사용해보지 않아 스트링 값을 딕셔너리 형태로 저장했던 것
->
-> 객체형태 다루기
+> 1. 정규식표현 보다 정교화 : 단순히 대괄호만 체크하던 것에서 타입들을 체크하도록 하는 과정
+> 2. NS
 >
 > 그리고 아직까지는 과제의 첫시작이 어려운 편이다.
 
@@ -50,6 +49,21 @@ _ = stringValues.map {
             if $0.starts(with: "\""){ stringValue.append($0)}
 }
 ```
+
+(2) `fliter`
+
+> 공백제거를 위해 whitespacesAndNewlines와 whitespace를 사용했으나 정교하게 제거되지 않아 아래처럼 수정
+>
+> **입력된 스트링 내부의 모든 공백 제거**
+
+```swift 
+private static func findJsonString (from validString: String) -> String{
+        let splitted = validString.filter { $0 != " " }
+        return splitted
+}
+```
+
+
 
 
 
