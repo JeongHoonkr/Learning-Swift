@@ -1,4 +1,6 @@
-## 리팩토링
+## IF-else 줄이기 및 형변환 연습
+
+
 
 #### 1. 단순 if-else구문일경우
 
@@ -13,8 +15,6 @@ if matchValue != [] {
 return !matchValue.isEmpty
 return matchedValue != []
 ```
-
-
 
 
 
