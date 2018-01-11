@@ -159,6 +159,8 @@ extension Array: JsonDataCommon {
 >
 > * 또한 이미 Array와 Dictionary를 extension해서 위 프로토콜을 채택해놓았고 해당 타입의 세부데이터를 및 사용될 메서드도 명시해놓았기 때문에 기존 코드처럼 if-else로 구분할  필요가 없고 형변환할 필요가 없다.!
 
+
+
 **타입별 갯수 출력 부분 함수 호출부 리팩토링**
 
 ```swift
@@ -197,4 +199,3 @@ static func makeJsonTypeforPrinting(jsonType: JsonDataCommon) -> String {
         return jsonType.readyforPrinting()
 }
 ```
-
