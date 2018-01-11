@@ -145,7 +145,7 @@ private static func getJSONArray(elements: Array<String>) -> [JSONType] {
 
 > 아래 코드의 `getEachValue {}` 함수는 3-(2) 코드를 해결하면서 새로 보완한 함수로 객체와 배열 모두 사용한다.
 >
-> - String타입을 본래 타입으로 형변환
+> - String타입을 본래 타입으로 형변환해서 딕셔너리의 벨류, 배열의 값으로 반환
 
 ```swift
  private static func getEachValue(stringNotyetValue: String) -> JSONType {
