@@ -68,7 +68,7 @@
   * 3단계 : [규칙 검사하기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%203%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step3))
   * 4단계 : [중첩 구조 분석](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%204%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step4))
   * 5단계 : JSON문자열 생성 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%205%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%205%EB%8B%A8%EA%B3%84%20v02.md)) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step5))
-  * 6단계 : 파일 입출력 (v01), (v02), (v03) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step6))
+  * 6단계 : 파일 입출력 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%206%EB%8B%A8%EA%B3%84%20v01.md)), (v02), (v03) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step6))
 
 ### 04. GIT이랑 친구하기
 
