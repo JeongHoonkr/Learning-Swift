@@ -47,7 +47,7 @@ _ = stringValues.map {
 }
 ```
 
-(2) `fliter`
+(2) `filter`
 
 > 공백제거를 위해 whitespacesAndNewlines와 whitespace를 사용했으나 정교하게 제거되지 않아 아래처럼 수정
 >
