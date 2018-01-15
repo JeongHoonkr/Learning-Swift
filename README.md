@@ -45,6 +45,7 @@
 **과제는 동일과제의 후순위로 갈수록 기존내용에 요구사항이 추가되어 리팩토링되는 구조입니다.**
 
 - 베이스볼 게임 version[[1](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/Baseball%20Game%20v01.md)], [[2](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/Baseball%20Game%20v02.md)], [[3](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/Baseball%20Game%20v03.md)]  : **코드스쿼드 Lv2 입단테스트**
+
 - 단위변환기
   * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EA%B0%84%EB%8B%A8%EB%B2%84%EC%A0%84.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EA%B8%B8%EC%9D%B4%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%20%ED%95%A8%EC%88%98.md), 
   * [길이값 입력 및 조건문](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EA%B8%B8%EC%9D%B4%20%EA%B0%92%20%EC%9E%85%EB%A0%A5%20%EB%B0%8F%20%EC%A1%B0%EA%B1%B4%EB%AC%B8.md)
@@ -52,16 +53,19 @@
   * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EC%95%BC%EB%93%9C%20%EA%B8%B8%EC%9D%B4%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EC%9E%8)
   * [무게,부피 단위 추가](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%AC%B4%EA%B2%8C%2C%EB%B6%80%ED%94%BC%EB%8B%A8%EC%9C%84%20%EC%B6%94%EA%B0%80.md)
   * [단위변환기 최종](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EC%B5%9C%EC%A2%85.md)
+
 - 사다리
   * 1단계 [시작하기] ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%201%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%201%EB%8B%A8%EA%B3%84%20v02.md))
   * 2단계 ([메소드분리](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%202%EB%8B%A8%EA%B3%84%20v01.md))
   * 3단계 [객체단위 분리] ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v02.md)), ([v03](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v02.md)), ([v04](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20V04.md)), ([v05](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%94%94%EB%A6%AC%EA%B2%8C%EC%9E%84%203%EB%8B%A8%EA%B3%84%20v05.md))
   * 4단계 [테스트코드 작성] ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/LadderGame/%EC%82%AC%EB%8B%A4%EB%A6%AC%EA%B2%8C%EC%9E%84%204%EB%8B%A8%EA%B3%84%20v02.md))
+
 - 좌표계산기
   * 2단계 : [점](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%202%EB%8B%A8%EA%B3%84.md)
   * 3단계 : 직선 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%203%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%203%EB%8B%A8%EA%B3%84%20v02.md)), ([v03](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%203%EB%8B%A8%EA%B3%84%20v03.md)) —([본 단계 최종](https://github.com/JeongHoonkr/swift-coordinate/tree/coordinate-step3))
   * 4단계 : [삼각형](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%204%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-coordinate/tree/d007c53c3461510a3fc579e93385911d41dfede2))
   * 5단계 : [사각형](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CoordinatesCalculator/%EC%A2%8C%ED%91%9C%EA%B3%84%EC%82%B0%EA%B8%B0%205%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-coordinate/tree/coordinate-step5))
+
 - Json문자열 분석기
   * 1단계 : [단순 List분석](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%201%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step1/JSONParser))
   * 2단계 : [object분석](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%202%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step2/JSONParser))
@@ -69,6 +73,14 @@
   * 4단계 : [중첩 구조 분석](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%204%EB%8B%A8%EA%B3%84.md) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step4))
   * 5단계 : JSON문자열 생성 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%205%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%205%EB%8B%A8%EA%B3%84%20v02.md)) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step5))
   * 6단계 : 파일 입출력 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%206%EB%8B%A8%EA%B3%84%20v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%206%EB%8B%A8%EA%B3%84%20v02.md)), ([v03](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/JSONparser/JSON%206%EB%8B%A8%EA%B3%84%20v03.md)) - ([전체코드](https://github.com/JeongHoonkr/swift-jsonparser/tree/jsonparser-step6))
+
+- CardGame
+
+  * 1단계 : [카드 클래스](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step1.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step1))
+
+  * 2단계 : 카드덱 구현 - (전체코드)
+
+    ​
 
 ### 04. GIT이랑 친구하기
 
