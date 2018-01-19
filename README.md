@@ -78,7 +78,13 @@
 
   * 1단계 : [카드 클래스](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step1.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step1))
 
-  * 2단계 : 카드덱 구현 - (전체코드)
+  * 2단계 : [카드덱 구현](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step2.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step2))
+
+  * 3단계 : 카드스택 출력(변경사항이 간단해서 별도 회고는 없음) ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step3))
+
+  * 4단계 : 포커딜러 출력 - (전체코드)
+
+  * 5단계 : 다양한 게임 만들기 - (전체코드)
 
     ​
 
