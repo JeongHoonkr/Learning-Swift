@@ -5,6 +5,5 @@
 
 ## CONTENT
 * [Study](Study/README.md)
-  * [Swift Grammer](Swift grammer/README.md)
+  * [Swift Grammer](Swift Grammer/README.md)
     * [Array](Study/Swift Grammer/Array.md)
-
