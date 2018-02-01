@@ -5,5 +5,4 @@
 
 ## CONTENT
 * [Study](Study/README.md)
-  * [Swift Grammer](Swift Grammer/README.md)
-    * [Array](Study/Swift Grammer/Array.md)
+  * [터미널 기초](Study/터미널기초.md)
