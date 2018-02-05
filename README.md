@@ -88,40 +88,28 @@
 
     ​
 
-### 04. 영어공부? (이름미정)
+### 04. cocoacast 메일링 번역
 
-cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 한글로 번역해본다.
+cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 한글로 번역해보려 한다.
 
-* [Namespaces_in_Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Namespaces_in_swift.md)
-
-
-
-### 04. GIT이랑 친구하기
-
-------
-
-**우린 언제쯤 베프가 될 수 있을까!**
-
-- 넌 누구니?
-
-
-- 아직은 서먹한 사이
-
-  ​
-
-### 05. 오직 Git을 위한 터미널
-
-------
-
-- 터미널….Git으로 가는길
+* Pattern
+  * [Pattern #1. Namespaces_in_Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Namespaces_in_swift.md)
+  * Pattern #2. Dependency Injection in Swift
+  * Pattern #3. Value Types and Reference Types
+  * Pattern #4. Model-View-ViewModel In Swift
+* Using Fatal Errors to Add Clarity and Elegance
+* Five Signs of Code Smell in Swift
+* What Are the Benefits of Model-View-ViewModel
+* What Are the Responsibilities of a View Controller
+* How Healthy Are Your View Controllers
+* Take MVVM to the Next Level
+* MVVM Is More Than a Pattern
+* Are Your Ready for a Sneak Peek?
 
 
 
 
-
-
-
-### 06. 애플 공식문서 링크
+### 05. 애플 공식문서 링크
 
 ------
 
@@ -129,7 +117,11 @@ cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 
 
 
 
-### 07. 참고 사이트
+
+
+
+
+### 06. 참고 사이트
 
 ------
 
@@ -137,7 +129,7 @@ cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 
 
 
 
-### 08. 유용한 깃허브들
+### 07. 유용한 깃허브들
 
 ------
 
