@@ -88,6 +88,14 @@
 
     ​
 
+### 04. 영어공부? (이름미정)
+
+cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 한글로 번역해본다.
+
+* [Namespaces_in_Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Namespaces_in_swift.md)
+
+
+
 ### 04. GIT이랑 친구하기
 
 ------
