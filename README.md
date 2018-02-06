@@ -90,11 +90,15 @@
 
 ### 04. cocoacast 메일링 번역
 
-cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 한글로 번역해보려 한다.
+cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 한글로 번역해보려 합니다.
+
+<개인적으로 오역이 있을 수 있는 단어나, 원문이 반드시 필요한 문장은 같이 기입해 두려고 합니다.>
+
+
 
 * Pattern
   * [Pattern #1. Namespaces_in_Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Namespaces_in_swift.md)
-  * Pattern #2. Dependency Injection in Swift
+  * [Pattern #2. Dependency Injection in Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Dependency_Injection_in_Swift.md) (번역 진행중)
   * Pattern #3. Value Types and Reference Types
   * Pattern #4. Model-View-ViewModel In Swift
 * Using Fatal Errors to Add Clarity and Elegance
