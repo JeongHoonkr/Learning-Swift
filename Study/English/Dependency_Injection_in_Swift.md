@@ -96,5 +96,143 @@ viewController.requestManager = RequestManager()
 
 ##### Another Example
 
-당신에게 내가 앞서 강조했던 것(의존성 주입의 장점을 이해하게 된다면 매력적으로 느끼게 될것)에 대해 다른 예시를 제시하려고 한다. 아래 예를 보자.
+당신에게 내가 앞서 강조했던 것(의존성 주입의 장점을 이해하게 된다면 매력적으로 느끼게 되는 것)에 대해 다른 예시를 제시하려고 한다. 아래 예를 보자.
 
+```swift
+protocol Serializer {
+    func serialize(data: AnyObject) -> NSData?
+}
+
+class RequestSerializer: Serializer {
+    func serialize(data: AnyObject) -> NSData? {
+        ...
+    }
+}
+
+class DataManager {
+    var serializer: Serializer? = RequestSerializer()
+}
+```
+
+
+
+`DataManager` 클래스는 `Serializer?` 타입의 `serializer` 속성을 갖고 있다. 이 예제에서 `Serializer`는 프로토콜이다. `DataManager` 클래스는 `Serializer` 프로토콜을 채택하는 타입을 인스턴스화하는 역할을 하고 있는데, `RequestSerializer` 클래스가 그 예(역자주 : 프로토콜을 채택하는 타입의 인스턴스)이다.
+
+
+
+`DataManager` 클래스가 `Serializer`타입의 객체를 어떻게 인스턴스화 하는지 알아야 할까? 아래 예시는 프로토콜과 의존성 주입의 힘을 보여준다.
+
+```swift
+// Initialize Data Manager
+let dataManager = DataManager()
+
+// Configure Data Manager
+dataManager.serializer = RequestSerializer()
+```
+
+
+
+##### What Do You Gain
+
+나는 당신이 내가 제시한 예시들을 보고 의존성 주입에 대해 조금의 관심을 갖게 되었기를 바란다. 이제 나는 의존성 주입의 추가적인 장점들을 나열하려고 한다.
+
+
+
+* Transparency
+
+객체에 의존성을 주입함으로써 클래스나 구조체의 역할과 책임은 좀 더 명확하고 투명해진다. 뷰컨트롤러에 request manager를 주입함으로써 우리는 뷰컨트롤러가 request manager에 의존하고 있다는 것을 이해할 수 있고, 뷰컨트롤러가 요청에 대한 관리 혹은 조작(request managing and/or handling.)에 대한 책임이 있다는 점을 예상할 수 있다.  
+
+
+
+* Testing
+
+의존성 주입을 사용하면, 단위테스트가 훨씬 쉬워진다. 의존성 주입은 객체의 의존성을 모형객체로 대체하는것을 더 쉽게 할 수 있게 하는데, 단위테스트시 설정하는것과 객체의 행동을 독립적으로 만드는 것을 더 쉽게 한다
+
+
+
+이 예시에서  `MockSerializer` 클래스를 정의했다. 왜냐하면 `MockSerializer` 클래스는 `Serializer` 프로토콜을 채택하고 있어서, 우리가 data manager의 `serializer` 속성에 `MockSerializer`을 할당할 수 있게 해준다.
+
+```swift
+class MockSerializer: Serializer {
+    func serialize(data: AnyObject) -> NSData? {
+        ...
+    }
+}
+
+// Initialize Data Manager
+let dataManager = DataManager()
+
+// Configure Data Manager
+dataManager.serializer = MockSerializer()
+```
+
+
+
+* Separation of Concerns
+
+앞서 내가 언급하고 묘사했던것처럼, 의존성 주입의 추가적인 장점은 concerns의 엄격한 분리에 있다. 이전 예시에서 `DataManager` 클래스는 `RequestSerializer` 인스턴스를 인스턴스화하는데 책임을 갖고 있지 않았고, 어떻게 이 작업을 수행하는지 알 필요도 없었다.
+
+
+
+비록 `DataManager` 클래스가 자신의 serializer의 행동에 관심을 갖고 있었지만 serializer의 인스턴스화엔 관심을 갖고 있지 않았고, 그럴 이유도 없었다. 만약 `RequestManager`가 첫번째 예에서처럼 몇가지 의존성을 갖고 있었다면 어땠을까? `ViewController` 인스턴스 또한 이 의존성들에 대해 알고 있어야 할까? 그렇게 되면 금새 엉망이 될 것이다.
+
+
+
+* Coupling (결합도) <[결합도와 응집도 설명](http://lazineer.tistory.com/93)>
+
+`DataManager` 클래스의 예는 프로토콜과 의존성 주입을 사용하는것이 어떻게 프로젝트의 결합도를 낮춰줄 수 있는지를 설명하고 있다. 스위프트에서 프로토콜은 믿기 힘들정도로 유용하고, 다재다능하다. 이것은 단지 프로토콜의 엄청난 기능들 중 한가지 시나리오에 불과하다.
+
+
+
+##### Types
+
+많은 개발자들이 세가지 종류의 의존성 주입에 대해 고려하고 있다.
+
+1. initializer injection
+2. property injection
+3. method injection
+
+그렇지만, 이들은 서로 동등하게 고려되선 안된다. 아래에 각 형태의 장점과 단점을 설명하고자 한다.
+
+
+
+* Initializer Injection
+
+난 개인적으로 객체의 초기화단계에서 의존성을 건내는것을 추천하는데, 왜냐하면 몇가지 장점을 갖고 있기 때문이다. 가장 중요한 장점은 초기화 단계에서 건내진 의존성들은 불변적으로 만들어지기 때문이다. 이점은 스위프트에서 의존성을 위해 속성들을 상수로 선언하는것을 쉽게 한다. 아래 예를 보자
+
+```swift
+class DataManager {
+    private let serializer: Serializer
+    init(serializer: Serializer) {
+        self.serializer = serializer
+    }
+}
+
+// Initialize Request Serializer
+let serializer = RequestSerializer()
+
+// Initialize Data Manager
+let dataManager = DataManager(serializer: serializer)
+```
+
+
+
+`serializer` 속성의 값을 설정하는 유일한 방법은 초기화단계에서 인자(argument)로 건내는것 뿐이다. `init(serializer:)` 메서드는 지정 이니셜라이저이며, `DataManager` 인스턴스가 올바르게 설정될 수 있다는 점을 보증해준다. 또다른 장점은 `serializer` 속성이 변경될 수 없다는 점이다.
+
+
+
+왜냐하면 우리는 초기화 과정에서 serializer를 인자(argument)로 건냈기 때문이다, 지정 이니셜라이저는 `DataManager`클래스의 의존성이 무엇인지 분명하게 보여준다.
+
+
+
+
+
+* Property injection
+
+
+
+
+
+* Method injection
+
+  ​
