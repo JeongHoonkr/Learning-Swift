@@ -35,6 +35,7 @@
 - [2차원 배열로 별쌓기](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/%EB%B3%84%EC%8C%93%EA%B8%B0%EB%A5%BC%202%EC%B0%A8%EC%9B%90%20%EB%B0%B0%EC%97%B4%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%)
 - [프로퍼티 연습 프로젝트](https://github.com/JeongHoonkr/Studying-Record/tree/master/Study/%EC%8B%A4%EC%8A%B5/CopiedMonsterTown)
 - [if-else 줄이기 및 형변환 연습](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/if-else%20%EC%A4%84%EC%9D%B4%EA%B8%B0%20%EB%B0%8F%20%ED%98%95%EB%B3%80%ED%99%98%20%EC%97%B0%EC%8A%B5.md)
+- [map,filter,reduce](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EC%8B%A4%EC%8A%B5/Map%2C%20Filter%2C%20Reduce%20%EC%97%B0%EC%8A%B5.md)
 
 
 
