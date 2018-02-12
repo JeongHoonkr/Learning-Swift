@@ -99,7 +99,7 @@ cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 
 
 * Pattern
   * [Pattern #1. Namespaces_in_Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Namespaces_in_swift.md)
-  * [Pattern #2. Dependency Injection in Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Dependency_Injection_in_Swift.md) (번역 진행중)
+  * [Pattern #2. Dependency Injection in Swift](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/English/Dependency_Injection_in_Swift.md)
   * Pattern #3. Value Types and Reference Types
   * Pattern #4. Model-View-ViewModel In Swift
 * Using Fatal Errors to Add Clarity and Elegance
