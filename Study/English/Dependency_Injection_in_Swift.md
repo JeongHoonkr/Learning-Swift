@@ -229,10 +229,53 @@ let dataManager = DataManager(serializer: serializer)
 
 * Property injection
 
+의존성은 주입은 클래스나 구조체의 내부 혹은 전역속성을 선언함으로써도 이루어질 수 있다. 이것은 편리해보이지만, 의존성이 대체되거나 수정될 수 있다는 허점을 낳는다. 즉 의존성이 불변적인것이 아니라는 말이다.
 
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+    var requestManager: RequestManager?
+}
+
+// Initialize View Controller
+let viewController = ViewController()
+
+// Configure View Controller
+viewController.requestManager = RequestManager()
+```
+
+의존성 주입은 때떄로 당신이 유연성을 갖게 한다. 예를 들어 당신이 스토리보드를 사용한다면, 커스텀 이니셜라이저( == 직접 만든 이니셜라이저)를 사용할 수 없고, 생성자주입(initializer injection)을 사용할 것이다. 속성주입은 차선책이다.
 
 
 
 * Method injection
 
-  ​
+의존성은 필요할때마다 주입될 수도 있다. 이것은 의존성을 인자로 받아들이는 메서드를 정의하는 것을 쉽게 한다. 이 예에서 생성자는 `DataManager` 클래스의 속성이 아니다. 대신에 생성자는 `serializeRequest(_:with:)` 메서드의 인자로써 주입됐다.
+
+```swift
+class DataManager {
+    func serializeRequest(request: Request, with serializer: Serializer) -> NSData? {
+        ...
+    }
+}
+```
+
+`DataManager` 클래스는 의존성에 대한 몇몇 통제를 잃었지만, 이러한 형태의 의존성주입은 유연성을 제공한다. 이런 경우에 의존성을 사용한다면, 우리는 어떤 생성자 타입을 `serializeRequest(_:with:)` 메서드의 인자로 건낼지 선택할 수 있다.
+
+각각의 의존성 주입마다 사례를 갖고있다는 점을 강조하는 것은 중요한 일이다. 생성자주입이 다른 많은 시나리오보다 훨씬 중요한 옵션이지만, 최선이라거나 선호되는 형태는 아니다. 사용 사례들을 고려해보고나서, 어떤 타입의 의존성주입이 가장 잘 맞는지 선택해야 한다.
+
+
+
+##### Singletons
+
+의존성 주입은 프로젝트에서 싱글톤의 필요성을 제거하는데 사용할 수 있는 패턴이다. 나는 싱글톤 패턴의 팬이 아니며, 가능한한 싱글톤을 피하려고 한다. 비록 내가 싱글톤 패턴의 안티는 아니지만, 나는 가능한한 정말 드물게 사용하려고 한다. 의존성 주입이 결합도(coupling)를 낮추는 반면, 싱글톤 패턴은 의존성을 증가시킨다.
+
+
+
+너무나 자주 개발자들은 싱글톤을 사용하는데, 왜냐하면 싱글톤이 종종 발생하는 귀찮은 문제들을 해결하는데 가장 쉬운 해결책이기 때문이다. 그러나 의존성 주입은 프로젝트에 명확성을 더해준다. 프로젝트의 초기화 동안 의존성을 주입함으로써 목표 클래스와 구조체가 어떤 의존성을 갖고 있는지 보다 명확하게 하고, 객체의 몇가지 책임을 드러낸다.
+
+
+
+의존성주입은 나를 복잡한 프로젝트의 최상단에 설 수 있게 해주기에, 내가 가장 선호하는 패턴이다. (프로젝트가 복잡해질수록 큰 그림을 보기 어렵기 때문이겠지) 이 패턴은 너무나 많은 장점을 갖고 있다. 내가 생각하는 유일한 단점은 코드 몇줄이 더  필요하다는 것이다.
+
