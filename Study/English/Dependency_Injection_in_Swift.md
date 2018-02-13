@@ -198,7 +198,7 @@ dataManager.serializer = MockSerializer()
 
 * Initializer Injection
 
-난 개인적으로 객체의 초기화단계에서 의존성을 건내는것을 추천하는데, 왜냐하면 몇가지 장점을 갖고 있기 때문이다. 가장 중요한 장점은 초기화 단계에서 건내진 의존성들은 불변적으로 만들어지기 때문이다. 이점은 스위프트에서 의존성을 위해 속성들을 상수로 선언하는것을 쉽게 한다. 아래 예를 보자
+난 개인적으로 객체의 초기화단계에서 의존성을 전달하는것을 추천하는데, 왜냐하면 몇가지 장점을 갖고 있기 때문이다. 가장 중요한 장점은 초기화 단계에서 전달한 의존성들은 불변적으로 만들어지기 때문이다. 이점은 스위프트에서 의존성을 위해 속성들을 상수로 선언하는것을 쉽게 한다. 아래 예를 보자
 
 ```swift
 class DataManager {
@@ -217,7 +217,7 @@ let dataManager = DataManager(serializer: serializer)
 
 
 
-`serializer` 속성의 값을 설정하는 유일한 방법은 초기화단계에서 인자(argument)로 건내는것 뿐이다. `init(serializer:)` 메서드는 지정 이니셜라이저이며, `DataManager` 인스턴스가 올바르게 설정될 수 있다는 점을 보증해준다. 또다른 장점은 `serializer` 속성이 변경될 수 없다는 점이다.
+`serializer` 속성의 값을 설정하는 유일한 방법은 초기화단계에서 인자(argument)로 전달하는것 뿐이다. `init(serializer:)` 메서드는 지정 이니셜라이저이며, `DataManager` 인스턴스가 올바르게 설정될 수 있다는 점을 보증해준다. 또다른 장점은 `serializer` 속성이 변경될 수 없다는 점이다.
 
 
 
@@ -251,7 +251,7 @@ viewController.requestManager = RequestManager()
 
 * Method injection
 
-의존성은 필요할때마다 주입될 수도 있다. 이것은 의존성을 인자로 받아들이는 메서드를 정의하는 것을 쉽게 한다. 이 예에서 생성자는 `DataManager` 클래스의 속성이 아니다. 대신에 생성자는 `serializeRequest(_:with:)` 메서드의 인자로써 주입됐다.
+의존성은 필요할때마다 주입될 수도 있다. 이것은 의존성을 인자로 건내는것을 메서드로 정의하는 것을 쉽게 한다. 이 예에서 생성자는 `DataManager` 클래스의 속성이 아니다. 대신에 생성자는 `serializeRequest(_:with:)` 메서드의 인자로써 주입됐다.
 
 ```swift
 class DataManager {
