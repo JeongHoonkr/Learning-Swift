@@ -21,6 +21,7 @@
 - Function [[basic](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Swift%20Grammer/Function%20basic.md), [intermediate](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Swift%20Grammer/Function%20intermediate.md), [advanced](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Swift%20Grammer/Function%20Advanced.md)]
 - [고차함수](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98.md)
 - 프로퍼티 ([지연저장형 및 계산형](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Swift%20Grammer/%EC%A7%80%EC%97%B0%EC%A0%80%EC%9E%A5%ED%98%95%20%EB%B0%8F%20%EA%B3%84%EC%82%B0%ED%98%95.md)), (프로퍼티관찰자와 타입프로퍼티)
+- class/struct ([값타입, 참조타입](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/Swift%20Grammer/%EA%B0%92%20%ED%83%80%EC%9E%85%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%ED%83%80%EC%9E%85.md))
 
 
 
