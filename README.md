@@ -51,8 +51,8 @@
 - 단위변환기
   * [간단버전](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EA%B0%84%EB%8B%A8%EB%B2%84%EC%A0%84.md), [함수사용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EA%B8%B8%EC%9D%B4%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%20%ED%95%A8%EC%88%98.md), 
   * [길이값 입력 및 조건문](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EA%B8%B8%EC%9D%B4%20%EA%B0%92%20%EC%9E%85%EB%A0%A5%20%EB%B0%8F%20%EC%A1%B0%EA%B1%B4%EB%AC%B8.md)
-  * [인치 길이 변환과 예외 처리](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EC%9D%B8%EC%B9%98%20%EA%B8%B8%EC%9D%B4%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%98%88%EC%99%B8%20%EC%B)
-  * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EC%95%BC%EB%93%9C%20%EA%B8%B8%EC%9D%B4%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EC%9E%8)
+  * [인치 길이 변환과 예외 처리](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EC%9D%B8%EC%B9%98%20%EA%B8%B8%EC%9D%B4%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC.md)
+  * [야드길이 변환과 반복입력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EC%95%BC%EB%93%9C%20%EA%B8%B8%EC%9D%B4%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EC%9E%85%EB%A0%A5.md)
   * [무게,부피 단위 추가](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%AC%B4%EA%B2%8C%2C%EB%B6%80%ED%94%BC%EB%8B%A8%EC%9C%84%20%EC%B6%94%EA%B0%80.md)
   * [단위변환기 최종](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/UnitConvertor/%EB%8B%A8%EC%9C%84%EB%B3%80%ED%99%98%EA%B8%B0%20%EC%B5%9C%EC%A2%85.md)
 
