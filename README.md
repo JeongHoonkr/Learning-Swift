@@ -84,7 +84,7 @@
 
   * 3단계 : 카드스택 출력(변경사항이 간단해서 별도 회고는 없음) ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step3))
 
-  * 4단계 : 포커딜러 출력 - (전체코드)
+  * 4단계 : [포커딜러 출력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step4.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step4))
 
   * 5단계 : 다양한 게임 만들기 - (전체코드)
 
@@ -120,10 +120,8 @@ cocoacast에서 메일로 받는 스위프트 혹은 IOS관련 영문 메일을 
 ------
 
 * [IOS File System](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/AccessingFilesandDirectories/AccessingFilesandDirectories.html#//apple_ref/doc/uid/TP4001)
-
-
-
-
+* [HIG](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
+* [ViewControllerProgrammingGuide](https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457-CH2-SW1)
 
 
 
