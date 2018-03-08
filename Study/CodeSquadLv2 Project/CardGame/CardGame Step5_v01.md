@@ -6,6 +6,7 @@
 
 - 객체관계 나누고 각 객체에 적절한 역할 부여하기
 - Private하게 만들고 get/set사용하지 않기
+- closure활용하기
 
 
 
@@ -14,6 +15,10 @@
 > - Private하게 속성을 만들고 get/set 사용하지 않고 해당 Private속성이 위치한 객체에 상위모듈에서 사용되는
 >
 >   메서드 만들기
+>
+>
+> - 포커규칙 구현하기
+> - 기존코드를 클로저를 활용하여 변경하기
 
 
 
@@ -207,6 +212,8 @@ struct Hand {
     }
     // 로직자체를 다소 최적화한 부분도 있지만 매개변수가 다 사라지고 인스턴스변수로 내부에서 사용하게 되면서
     // 보다 직관적으로 읽기 편해졌음을 느낄 수 있다.
+    
+    // 로직의 변경이 있었으나, 매개변ㅅ
     private  func checkFlushToStraight() -> [HandRanks] {
         var hands = [HandRanks]()
         if isFlush() && isRoyal( ) { hands.append(.royalFlush) }
