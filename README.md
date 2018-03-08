@@ -86,7 +86,7 @@
 
   * 4단계 : [포커딜러 출력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step4.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step4))
 
-  * 5단계 : 다양한 게임 만들기 - (전체코드)
+  * 5단계 : 다양한 게임 만들기 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step5_v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step5_v02.md)) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step5))
 
     ​
 
