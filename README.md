@@ -79,16 +79,19 @@
 - CardGame
 
   * 1단계 : [카드 클래스](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step1.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step1))
-
   * 2단계 : [카드덱 구현](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step2.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step2))
-
   * 3단계 : 카드스택 출력(변경사항이 간단해서 별도 회고는 없음) ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step3))
-
   * 4단계 : [포커딜러 출력](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step4.md) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step4))
-
   * 5단계 : 다양한 게임 만들기 ([v01](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step5_v01.md)), ([v02](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/CardGame/CardGame%20Step5_v02.md)) - ([전체코드](https://github.com/JeongHoonkr/swift-cardgame/tree/cardgame-step5))
 
-    ​
+- 음료자판기
+
+  * 1단계 및 2단계 별도 회고 업음 - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step2))
+  * 3단계 : [자판기 기본동작](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/VendingMachine/VendingMachine%20Step3.md) - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step3))
+  * 4단계 : 자판기 리팩토링
+  * 5단계 : 마무리하기(SwiftLint적용) 
+
+  ​
 
 ### 04. cocoacast 메일링 번역
 
