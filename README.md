@@ -87,9 +87,9 @@
 - 음료자판기
 
   * 1단계 및 2단계 별도 회고 업음 - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step2))
-  * 3단계 : [자판기 기본동작](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/VendingMachine/VendingMachine%20Step3.md) - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step3))
-  * 4단계 : 자판기 리팩토링
-  * 5단계 : 마무리하기(SwiftLint적용) 
+  * 3단계 : [기본동작](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/VendingMachine/VendingMachine%20Step3.md) - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step3))
+  * 4단계 : [리팩토링](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/VendingMachine/VendingMachine%20Step4.md) - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/vendingmachine-step4))
+  * 5단계 : [SwiftLint적용](https://github.com/JeongHoonkr/Studying-Record/blob/master/Study/CodeSquadLv2%20Project/VendingMachine/VendingMachine%20Step5.md) - ([전체코드](https://github.com/JeongHoonkr/swift-vendingmachine/tree/e9a3eb182b107244ea0ba736d881516733bf5bc3))
 
   ​
 
